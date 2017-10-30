@@ -1,0 +1,1 @@
+In this program i studied basic opportunities of OOP and C++

@@ -9,9 +9,8 @@ private:
     int yCoordinate_;
     bool isMoving_;//if moves = true, if stays = false
     bool isAlive_;
-protected:
-    enum direction {LEFT = 0, RIGHT, UP, DOWN} direction_;//in what direction object moves
 public:
+    enum direction {LEFT = 0, RIGHT, UP, DOWN} direction_;//in what direction object moves
     Base();
     int getXCoordinate();
     int getYCoordinate();

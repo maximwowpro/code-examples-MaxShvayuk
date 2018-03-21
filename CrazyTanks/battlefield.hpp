@@ -14,21 +14,20 @@ class Battlefield
 {
 private:
     std::vector <std::string> area_;
-    const int AREA_X_LINES = 80;
-    const int AREA_Y_LINES = 20;
-    //std::chrono::system_clock::time_point clock_;
+    int AREA_X_LINES = 80;
+    int AREA_Y_LINES = 20;
     std::vector <Enemy> enemies_;
     std::vector <Bullet> bullets_;
     Player player_;
-    char buttonPress_;//what button was pressed
+    enum direction {LEFT = 0, RIGHT, UP, DOWN, SPACE} button_;//in what direction object moves
 private:
     void generateRandomWalls();//use ONLY in constructor one time
     void fillAreaFirstTime();//use ONLY in constructor one time
-    void spawnEnemiesRandomLocations(int numberEnemies);//use ONLY in constructor one time
     bool checkCoordinatesForPlayerAndEnemy(int x, int y);//if coordinates are free return true
     void addPlayerAndEnemyToArea(int x, int y, std::vector <std::string> );
 public:
-    Battlefield(int numberEnemies);
+    Battlefield();
+    void spawnEnemiesRandomLocations(int numberEnemies);//use ONLY in constructor one time
     void drawBattlefield();
     void buttonPress();
     void updatePlayer();
@@ -37,6 +36,8 @@ public:
     void updateTimer();
     void updateLives();
     void updateScores();
+    bool isGameOvered();
+    bool isVictory();
     ~Battlefield(){}
 };
 

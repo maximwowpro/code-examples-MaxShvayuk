@@ -12,12 +12,11 @@
 #include <bullet.hpp>
 #include <battlefield.hpp>
 
-Battlefield::Battlefield(int numberEnemies)
+Battlefield::Battlefield()
 {
     fillAreaFirstTime();
-    spawnEnemiesRandomLocations(numberEnemies);
 
-    buttonPress_ = 0;
+    button_ = UP;
 }
 
 void Battlefield::spawnEnemiesRandomLocations(int numberEnemies)
@@ -89,14 +88,14 @@ void Battlefield::drawBattlefield()
 
 bool Battlefield::checkCoordinatesForPlayerAndEnemy(int x, int y)
 {   //return true if position for tank is free
-    return (area_.at(y).at(x) == ' ' &&
-            area_.at(y-1).at(x) == ' ' &&
-            area_.at(y+1).at(x) == ' ' &&
-            area_.at(y).at(x-1) == ' ' &&
-            area_.at(y).at(x+1) == ' ' );
+    return (/*area_.at(y).at(x) == ' ' &&*/
+            area_.at(y-2).at(x) == ' ' &&
+            area_.at(y+2).at(x) == ' ' &&
+            area_.at(y).at(x-2) == ' ' &&
+            area_.at(y).at(x+2) == ' ' );
 }
 
-void Battlefield::addPlayerAndEnemyToArea(int x, int y, std::vector<std::__cxx11::string> tank)
+void Battlefield::addPlayerAndEnemyToArea(int x, int y, std::vector<std::string> tank)
 {
     //    std::cout<<"drawPlayer 1"<<std::endl;
 
@@ -111,7 +110,10 @@ void Battlefield::updatePlayer()
 {
     //    std::cout<<"updatePlayer 1"<<std::endl;
 
+    player_.setDirection(static_cast<Base::direction> (button_) );
+
     std::vector <std::string> tmp = player_.getImagePlayer();
+    player_.setMovingState(true);
     player_.countNextFrameCoordinate();
 
     int x = player_.getXCoordinate();
@@ -126,7 +128,7 @@ void Battlefield::updatePlayer()
 
 void Battlefield::updateEnemies()
 {
-    for(int i=0; i<enemies_.size(); i++)
+    for(uint i=0; i<enemies_.size(); i++)
     {
         std::vector <std::string> tmp = enemies_.at(i).getImageEnemy();
         enemies_.at(i).countNextFrameCoordinate();
@@ -142,12 +144,51 @@ void Battlefield::updateEnemies()
     }
 }
 
-void Battlefield::buttonPress()
+void Battlefield::updateBullets()
 {
 
 }
 
+void Battlefield::buttonPress()
+{
+    char buttonPress;
+    std::cin.get(buttonPress);
 
+    switch(buttonPress)
+    {
+    case('a'):
+        button_ = LEFT;
+        break;
+    case('d'):
+        button_ = RIGHT;
+        break;
+    case('w'):
+        button_ = UP;
+        break;
+    case('s'):
+        button_ = DOWN;
+        break;
+    case(' '):
+        button_ = SPACE;
+        break;
+    }
+}
+
+bool Battlefield::isGameOvered()
+{
+    if(player_.getLives()==0)
+        return true;
+    else
+        return false;
+}
+
+bool Battlefield::isVictory()
+{
+    if(enemies_.size() == 0)
+        return true;
+    else
+        return false;
+}
 
 
 

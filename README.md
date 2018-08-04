@@ -7,9 +7,10 @@ Hello! You can browse my examples in 3 folders:
 3. **Multithreading** - simple example of multi-threaded program which uses p_thread.
 
 **C for ATMEGA328P** - C examples writen for _ATMEGA328P_ microcontroller:
-4. **Candle flashing** - LED lights like a candle.
+To run make, change **USB0** in string _PROGPORT:=/dev/ttyUSB0_ to name of controller in your system.
+1. **Candle flashing** - LED lights like a candle.
 5. **Clock + alarm + stopwatch** - this clock are using 2 *4-bit digital tubes* based on 2 __74HC595__ shift registers.
 
 **C++** - contains 2 C++ - based games:
-6. **CrazyTanks** - simple terminal game.
+1. **CrazyTanks** - simple terminal game.
 7. **Fighting** - video game powered by __SFML__ - _Simple free multimedia library_.

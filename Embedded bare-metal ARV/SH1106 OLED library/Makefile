@@ -1,10 +1,10 @@
-TARGET:=main
-DEPS:=onewire lock led_rgb print_uart
+TARGET:=i2c_test
+DEPS:=i2c
 MCU:=atmega328p			# see avr-as --help for full list
 PROGPORT:=/dev/ttyUSB0		# see ls /dev | grep tty and 99-Arduino.rules
 
 CC=avr-gcc
-CFLAGS=-mmcu=$(MCU) -Os -Wall -Wextra -Wpedantic -Waddr-space-convert -Wmisspelled-isr -save-temps #-Werror  -save-temps
+CFLAGS=-mmcu=$(MCU) -Os -std=c11 -Wall -Wextra -Wpedantic -Waddr-space-convert -Wmisspelled-isr -save-temps #-Werror  -save-temps
 SIZE:=avr-size --format=avr --mcu=$(MCU)
 OBJCOPY:=avr-objcopy -j .text -j .data -O ihex
 AVRDUDE:=avrdude

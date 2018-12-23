@@ -5,6 +5,7 @@ This is **BARE-METAL-AVR** project, **without** using any Arduino functions or l
 To flash this project to your ATMega2560 MCU, just run `make all` from _src_ folder.
 
 Connect 2 7-segment displays, buttons and LED to your ATMEGA328p evaluation board (for example, Arduino UNO) using this schematic diagram:
+
 ![Schematic diagram](https://i.ibb.co/PrL9s6k/connections.png)
 
 #### This is video-demonstration of the clock:

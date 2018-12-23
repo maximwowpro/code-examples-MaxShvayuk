@@ -3,7 +3,7 @@
 Hello! You can browse my examples in 3 folders:
 #
 **C** - C examples writen for Linux. It contains:
-1. Image resizer - example of image-resize program using _GraphicsMagick_ API.
+1. **Image resizer** - example of image-resize program using _GraphicsMagick_ API.
 2. **Linked list** - my own implementation of linked list, which can contains any data type (using _void*_) and full feature set to work with it.
 3. **Multithreading performance benchmark** - simple benchmark for testing the performance of multi-threading at your machine. Based on p_thread API.
 #

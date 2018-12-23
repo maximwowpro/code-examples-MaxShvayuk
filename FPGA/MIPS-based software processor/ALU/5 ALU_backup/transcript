@@ -1,0 +1,912 @@
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 4.18.6-arch1-1-ARCH
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do sim.do 
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# ** Error: alu.v(49): near "begin": syntax error, unexpected begin
+# ** Error: alu.v(57): near "10": syntax error, unexpected INTEGER NUMBER
+# ** Error: alu.v(63): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: alu.v(67): near "=": syntax error, unexpected '=', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: alu_tb.v(14): 'out_result' already declared in this scope (alu_mips).
+# ** Error: alu_tb.v(15): 'out_slt' already declared in this scope (alu_mips).
+# ** Error: (vlog-7) Failed to open design unit file "barrel_shifter.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# ** Error: alu.v(61): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: alu.v(68): near "endcase": syntax error, unexpected endcase
+# ** Error: alu.v(74): near "01": syntax error, unexpected INTEGER NUMBER
+# ** Error: alu.v(77): near "10": syntax error, unexpected INTEGER NUMBER
+# ** Error: alu.v(80): near "11": syntax error, unexpected INTEGER NUMBER
+# ** Error: alu.v(83): near "endcase": syntax error, unexpected endcase
+# -- Compiling module alu_tb
+# ** Error: alu_tb.v(5): In, out, or inout does not appear in port list: in_op_type_1.
+# ** Error: alu_tb.v(7): In, out, or inout does not appear in port list: in_op_type_2.
+# ** Error: alu_tb.v(11): In, out, or inout does not appear in port list: in_1.
+# ** Error: alu_tb.v(12): In, out, or inout does not appear in port list: in_2.
+# ** Error: alu_tb.v(14): In, out, or inout does not appear in port list: out_result.
+# ** Error: alu_tb.v(15): In, out, or inout does not appear in port list: out_slt.
+# ** Error: alu_tb.v(9): In, out, or inout does not appear in port list: in_op_type_3.
+# ** Error: alu_tb.v(24): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(25): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(26): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(27): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(29): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(30): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(31): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(32): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(34): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(35): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(36): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(37): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(39): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(40): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(41): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(42): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(46): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(47): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(48): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(49): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(51): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(52): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(53): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(54): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(56): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(57): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(58): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(59): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(61): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(62): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(63): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(64): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(68): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(69): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(70): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(72): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(73): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(74): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(78): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(79): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(80): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(81): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(82): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(83): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(84): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(85): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(86): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(89): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(90): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(91): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(92): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(93): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(94): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(95): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(96): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(97): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(100): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(101): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(102): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(103): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(104): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(105): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(106): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(107): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(108): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(111): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(112): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(113): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(114): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(115): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(116): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(117): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(118): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(119): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(122): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(123): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(124): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(125): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(126): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(127): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(128): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(129): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(130): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(133): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(134): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(135): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(136): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(137): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(138): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(139): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(140): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(141): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(151): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(152): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(153): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(154): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(155): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: (vlog-7) Failed to open design unit file "barrel_shifter.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# ** Error: alu.v(61): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: alu.v(68): near "endcase": syntax error, unexpected endcase
+# -- Compiling module alu_tb
+# ** Error: alu_tb.v(5): In, out, or inout does not appear in port list: in_op_type_1.
+# ** Error: alu_tb.v(7): In, out, or inout does not appear in port list: in_op_type_2.
+# ** Error: alu_tb.v(11): In, out, or inout does not appear in port list: in_1.
+# ** Error: alu_tb.v(12): In, out, or inout does not appear in port list: in_2.
+# ** Error: alu_tb.v(14): In, out, or inout does not appear in port list: out_result.
+# ** Error: alu_tb.v(15): In, out, or inout does not appear in port list: out_slt.
+# ** Error: alu_tb.v(9): In, out, or inout does not appear in port list: in_op_type_3.
+# ** Error: alu_tb.v(24): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(25): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(26): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(27): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(29): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(30): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(31): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(32): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(34): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(35): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(36): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(37): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(39): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(40): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(41): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(42): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(46): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(47): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(48): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(49): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(51): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(52): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(53): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(54): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(56): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(57): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(58): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(59): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(61): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(62): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(63): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(64): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(68): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(69): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(70): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(72): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(73): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(74): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(78): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(79): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(80): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(81): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(82): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(83): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(84): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(85): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(86): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(89): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(90): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(91): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(92): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(93): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(94): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(95): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(96): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(97): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(100): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(101): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(102): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(103): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(104): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(105): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(106): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(107): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(108): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(111): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(112): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(113): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(114): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(115): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(116): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(117): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(118): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(119): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(122): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(123): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(124): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(125): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(126): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(127): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(128): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(129): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(130): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(133): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(134): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(135): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(136): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(137): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(138): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(139): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(140): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(141): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(151): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(152): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(153): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(154): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(155): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: (vlog-7) Failed to open design unit file "barrel_shifter.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# ** Error: alu.v(61): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: alu.v(69): near "11": syntax error, unexpected INTEGER NUMBER
+# -- Compiling module alu_tb
+# ** Error: alu_tb.v(5): In, out, or inout does not appear in port list: in_op_type_1.
+# ** Error: alu_tb.v(7): In, out, or inout does not appear in port list: in_op_type_2.
+# ** Error: alu_tb.v(11): In, out, or inout does not appear in port list: in_1.
+# ** Error: alu_tb.v(12): In, out, or inout does not appear in port list: in_2.
+# ** Error: alu_tb.v(14): In, out, or inout does not appear in port list: out_result.
+# ** Error: alu_tb.v(15): In, out, or inout does not appear in port list: out_slt.
+# ** Error: alu_tb.v(9): In, out, or inout does not appear in port list: in_op_type_3.
+# ** Error: alu_tb.v(24): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(25): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(26): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(27): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(29): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(30): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(31): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(32): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(34): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(35): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(36): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(37): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(39): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(40): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(41): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(42): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(46): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(47): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(48): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(49): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(51): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(52): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(53): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(54): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(56): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(57): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(58): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(59): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(61): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(62): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(63): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(64): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(68): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(69): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(70): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(72): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(73): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(74): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(78): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(79): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(80): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(81): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(82): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(83): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(84): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(85): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(86): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(89): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(90): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(91): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(92): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(93): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(94): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(95): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(96): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(97): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(100): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(101): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(102): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(103): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(104): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(105): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(106): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(107): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(108): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(111): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(112): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(113): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(114): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(115): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(116): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(117): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(118): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(119): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(122): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(123): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(124): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(125): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(126): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(127): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(128): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(129): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(130): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(133): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(134): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(135): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(136): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(137): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(138): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(139): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(140): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(141): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(151): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(152): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(153): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(154): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(155): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: (vlog-7) Failed to open design unit file "barrel_shifter.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# ** Error: alu_tb.v(5): In, out, or inout does not appear in port list: in_op_type_1.
+# ** Error: alu_tb.v(7): In, out, or inout does not appear in port list: in_op_type_2.
+# ** Error: alu_tb.v(11): In, out, or inout does not appear in port list: in_1.
+# ** Error: alu_tb.v(12): In, out, or inout does not appear in port list: in_2.
+# ** Error: alu_tb.v(14): In, out, or inout does not appear in port list: out_result.
+# ** Error: alu_tb.v(15): In, out, or inout does not appear in port list: out_slt.
+# ** Error: alu_tb.v(9): In, out, or inout does not appear in port list: in_op_type_3.
+# ** Error: alu_tb.v(24): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(25): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(26): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(27): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(29): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(30): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(31): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(32): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(34): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(35): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(36): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(37): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(39): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(40): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(41): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(42): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(46): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(47): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(48): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(49): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(51): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(52): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(53): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(54): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(56): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(57): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(58): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(59): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(61): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(62): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(63): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(64): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(68): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(69): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(70): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(72): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(73): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(74): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(78): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(79): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(80): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(81): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(82): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(83): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(84): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(85): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(86): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(89): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(90): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(91): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(92): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(93): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(94): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(95): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(96): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(97): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(100): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(101): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(102): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(103): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(104): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(105): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(106): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(107): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(108): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(111): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(112): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(113): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(114): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(115): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(116): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(117): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(118): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(119): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(122): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(123): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(124): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(125): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(126): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(127): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(128): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(129): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(130): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(133): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(134): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(135): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(136): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(137): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(138): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(139): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(140): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(141): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(151): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(152): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(153): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(154): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(155): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: (vlog-7) Failed to open design unit file "barrel_shifter.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# ** Error: alu_tb.v(5): In, out, or inout does not appear in port list: in_op_type_1.
+# ** Error: alu_tb.v(7): In, out, or inout does not appear in port list: in_op_type_2.
+# ** Error: alu_tb.v(11): In, out, or inout does not appear in port list: in_1.
+# ** Error: alu_tb.v(12): In, out, or inout does not appear in port list: in_2.
+# ** Error: alu_tb.v(14): In, out, or inout does not appear in port list: out_result.
+# ** Error: alu_tb.v(15): In, out, or inout does not appear in port list: out_slt.
+# ** Error: alu_tb.v(9): In, out, or inout does not appear in port list: in_op_type_3.
+# ** Error: alu_tb.v(24): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(25): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(26): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(27): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(29): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(30): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(31): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(32): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(34): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(35): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(36): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(37): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(39): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(40): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(41): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(42): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(46): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(47): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(48): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(49): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(51): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(52): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(53): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(54): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(56): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(57): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(58): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(59): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(61): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(62): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(63): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(64): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(68): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(69): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(70): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(72): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(73): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(74): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(78): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(79): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(80): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(81): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(82): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(83): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(84): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(85): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(86): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(89): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(90): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(91): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(92): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(93): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(94): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(95): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(96): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(97): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(100): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(101): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(102): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(103): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(104): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(105): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(106): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(107): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(108): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(111): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(112): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(113): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(114): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(115): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(116): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(117): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(118): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(119): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(122): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(123): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(124): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(125): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(126): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(127): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(128): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(129): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(130): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(133): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(134): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(135): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(136): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(137): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(138): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(139): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(140): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(141): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: alu_tb.v(151): (vlog-2110) Illegal reference to net "in_op_type_1".
+# ** Error: alu_tb.v(152): (vlog-2110) Illegal reference to net "in_op_type_2".
+# ** Error: alu_tb.v(153): (vlog-2110) Illegal reference to net "in_op_type_3".
+# ** Error: alu_tb.v(154): (vlog-2110) Illegal reference to net "in_1".
+# ** Error: alu_tb.v(155): (vlog-2110) Illegal reference to net "in_2".
+# ** Error: (vlog-7) Failed to open design unit file "barrel_shifter.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# ** Error: alu_tb.v(156): (vlog-2110) Illegal reference to net "out_result".
+# ** Error: alu_tb.v(157): (vlog-2110) Illegal reference to net "out_slt".
+# ** Error: (vlog-7) Failed to open design unit file "barrel_shifter.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# ** Error: (vlog-7) Failed to open design unit file "barrel_shifter.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Error: (vsim-3053) alu.v(44): Illegal output or inout port connection for "port 'out'".
+#         Region: /alu_tb/alu_mips_obj/shifter_obj
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 13
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Error: (vsim-3053) alu_tb.v(19): Illegal output or inout port connection for "port 'out_result'".
+#         Region: /alu_tb/alu_mips_obj
+# ** Error: (vsim-3053) alu.v(44): Illegal output or inout port connection for "port 'out'".
+#         Region: /alu_tb/alu_mips_obj/shifter_obj
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 13
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# ** Error: alu.v(88): (vlog-2730) Undefined variable: 'endwire'.
+# ** Error: alu.v(88): near "11": syntax error, unexpected INTEGER NUMBER
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_mips
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# ** Note: $finish    : alu_tb.v(146)
+#    Time: 500 ns  Iteration: 0  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at alu_tb.v line 146
+# Simulation Breakpoint: 1
+# Break in Module alu_tb at alu_tb.v line 146
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_mips
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# ** Note: $finish    : alu_tb.v(146)
+#    Time: 500 ns  Iteration: 0  Instance: /alu_tb
+# Window cannot be closed because the modal window "Finish Vsim" is still open.
+# 1
+# Break in Module alu_tb at alu_tb.v line 146
+# Simulation Breakpoint: 1
+# Break in Module alu_tb at alu_tb.v line 146
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# 	barrel_shifter
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# ** Error: (vsim-3053) alu_tb.v(19): Illegal output or inout port connection for "port 'out_result'".
+#         Region: /alu_tb/alu_mips_obj
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 13
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# ** Error: alu_tb.v(156): (vlog-2110) Illegal reference to net "out_result".
+# -- Compiling module barrel_shifter
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  alu.v alu_tb.v barrel_shifter.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# 	barrel_shifter
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# ** Note: $finish    : alu_tb.v(146)
+#    Time: 500 ns  Iteration: 0  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at alu_tb.v line 146
+# Simulation Breakpoint: 1
+# Break in Module alu_tb at alu_tb.v line 146
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Error: (vsim-3053) alu.v(44): Illegal output or inout port connection for "port 'out'".
+#         Region: /alu_tb/alu_mips_obj/shifter_obj
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./sim.do PAUSED at line 13
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : alu_tb.v(146)
+#    Time: 500 ns  Iteration: 0  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at alu_tb.v line 146
+# Simulation Breakpoint: 1
+# Break in Module alu_tb at alu_tb.v line 146
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : alu_tb.v(152)
+#    Time: 48 ns  Iteration: 0  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at alu_tb.v line 152
+# Simulation Breakpoint: 1
+# Break in Module alu_tb at alu_tb.v line 152
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : alu_tb.v(152)
+#    Time: 48 ns  Iteration: 0  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at alu_tb.v line 152
+# Simulation Breakpoint: 1
+# Break in Module alu_tb at alu_tb.v line 152
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : alu_tb.v(152)
+#    Time: 48 ns  Iteration: 0  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at alu_tb.v line 152
+# Simulation Breakpoint: 1
+# Break in Module alu_tb at alu_tb.v line 152
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module alu_mips
+# -- Compiling module alu_tb
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	alu_tb
+# vsim -novopt work.alu_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_tb
+# Loading work.alu_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.alu_mips
+# Loading work.alu_mips
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/5 ALU/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : alu_tb.v(152)
+#    Time: 48 ns  Iteration: 0  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at alu_tb.v line 152
+# Simulation Breakpoint: 1
+# Break in Module alu_tb at alu_tb.v line 152
+# MACRO ./sim.do PAUSED at line 19

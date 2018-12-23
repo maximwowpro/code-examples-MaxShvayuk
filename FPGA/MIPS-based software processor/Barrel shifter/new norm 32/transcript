@@ -1,0 +1,246 @@
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 4.18.6-arch1-1-ARCH
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do sim.do 
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# ** Error: barrel_shifter.v(54): Can't use named concatenation literals here.
+# -- Compiling module barrel_shifter_tb
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  barrel_shifter.v barrel_shifter_tb.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# ** Error: barrel_shifter.v(30): near "begin": syntax error, unexpected begin
+# ** Error: barrel_shifter.v(45): near "2": syntax error, unexpected INTEGER NUMBER
+# ** Error: barrel_shifter.v(50): near "end": syntax error, unexpected end
+# ** Error: barrel_shifter_tb.v(5): Port mode is incompatible with declaration: in
+# ** Error: barrel_shifter_tb.v(6): Port mode is incompatible with declaration: sl
+# ** Error: barrel_shifter_tb.v(7): 'out' already declared in this scope (barrel_shifter).
+# ** Error: barrel_shifter_tb.v(8): Port mode is incompatible with declaration: left_of_right
+# ** Error: barrel_shifter_tb.v(9): Port mode is incompatible with declaration: logick_rotate_ariphmetic_shift
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  barrel_shifter.v barrel_shifter_tb.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# ** Error: barrel_shifter.v(45): near "2": syntax error, unexpected INTEGER NUMBER
+# ** Error: barrel_shifter.v(50): near "end": syntax error, unexpected end
+# -- Compiling module barrel_shifter_tb
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  barrel_shifter.v barrel_shifter_tb.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# ** Error: barrel_shifter.v(51): near "end": syntax error, unexpected end
+# -- Compiling module barrel_shifter_tb
+# ** Error: /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim.do line 10
+# /opt/modelsim/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog  barrel_shifter.v barrel_shifter_tb.v"
+do sim.do
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module barrel_shifter
+# -- Compiling module barrel_shifter_tb
+# 
+# Top level modules:
+# 	barrel_shifter_tb
+# vsim -novopt work.barrel_shifter_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter_tb
+# Loading work.barrel_shifter_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/3 barrel_shifter/new norm 32/work.barrel_shifter
+# Loading work.barrel_shifter
+# ** Note: $finish    : barrel_shifter_tb.v(64)
+#    Time: 57 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# Simulation Breakpoint: 1
+# Break in Module barrel_shifter_tb at barrel_shifter_tb.v line 64
+# MACRO ./sim.do PAUSED at line 19

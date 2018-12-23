@@ -1,0 +1,29 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'logick_rotate_ariphmetic_shift[0]'
+Slack : -1.701
+TNS   : -45.189
+
+Type  : Slow Model Hold 'logick_rotate_ariphmetic_shift[0]'
+Slack : 0.529
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'logick_rotate_ariphmetic_shift[0]'
+Slack : -1.222
+TNS   : -1.222
+
+Type  : Fast Model Setup 'logick_rotate_ariphmetic_shift[0]'
+Slack : -0.118
+TNS   : -0.616
+
+Type  : Fast Model Hold 'logick_rotate_ariphmetic_shift[0]'
+Slack : -0.079
+TNS   : -0.678
+
+Type  : Fast Model Minimum Pulse Width 'logick_rotate_ariphmetic_shift[0]'
+Slack : -1.222
+TNS   : -1.222
+
+------------------------------------------------------------

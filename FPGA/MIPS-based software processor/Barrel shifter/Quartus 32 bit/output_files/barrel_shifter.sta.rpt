@@ -1,0 +1,1372 @@
+TimeQuest Timing Analyzer report for barrel_shifter
+Fri Oct 19 00:34:08 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'logick_rotate_ariphmetic_shift[0]'
+ 12. Slow Model Hold: 'logick_rotate_ariphmetic_shift[0]'
+ 13. Slow Model Minimum Pulse Width: 'logick_rotate_ariphmetic_shift[0]'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'logick_rotate_ariphmetic_shift[0]'
+ 24. Fast Model Hold: 'logick_rotate_ariphmetic_shift[0]'
+ 25. Fast Model Minimum Pulse Width: 'logick_rotate_ariphmetic_shift[0]'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; barrel_shifter                                                    ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                               ;
++-----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------+
+; Clock Name                        ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                               ;
++-----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------+
+; logick_rotate_ariphmetic_shift[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { logick_rotate_ariphmetic_shift[0] } ;
++-----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                 ;
++------------+-----------------+-----------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                        ; Note ;
++------------+-----------------+-----------------------------------+------+
+; 227.17 MHz ; 227.17 MHz      ; logick_rotate_ariphmetic_shift[0] ;      ;
++------------+-----------------+-----------------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------------------------------+
+; Slow Model Setup Summary                                   ;
++-----------------------------------+--------+---------------+
+; Clock                             ; Slack  ; End Point TNS ;
++-----------------------------------+--------+---------------+
+; logick_rotate_ariphmetic_shift[0] ; -1.701 ; -45.189       ;
++-----------------------------------+--------+---------------+
+
+
++-----------------------------------------------------------+
+; Slow Model Hold Summary                                   ;
++-----------------------------------+-------+---------------+
+; Clock                             ; Slack ; End Point TNS ;
++-----------------------------------+-------+---------------+
+; logick_rotate_ariphmetic_shift[0] ; 0.529 ; 0.000         ;
++-----------------------------------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Slow Model Minimum Pulse Width Summary                     ;
++-----------------------------------+--------+---------------+
+; Clock                             ; Slack  ; End Point TNS ;
++-----------------------------------+--------+---------------+
+; logick_rotate_ariphmetic_shift[0] ; -1.222 ; -1.222        ;
++-----------------------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'logick_rotate_ariphmetic_shift[0]'                                                                                                                       ;
++--------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node       ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -1.701 ; logick_rotate_ariphmetic_shift[0] ; out[10]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.204      ; 5.543      ;
+; -1.654 ; logick_rotate_ariphmetic_shift[0] ; out[28]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.204      ; 5.497      ;
+; -1.652 ; logick_rotate_ariphmetic_shift[0] ; out[7]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.318      ; 5.524      ;
+; -1.640 ; logick_rotate_ariphmetic_shift[0] ; out[16]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.238      ; 5.518      ;
+; -1.588 ; logick_rotate_ariphmetic_shift[0] ; out[3]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.313      ; 5.455      ;
+; -1.566 ; logick_rotate_ariphmetic_shift[0] ; out[2]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.330      ; 5.415      ;
+; -1.550 ; logick_rotate_ariphmetic_shift[0] ; out[4]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.196      ; 5.395      ;
+; -1.528 ; logick_rotate_ariphmetic_shift[0] ; out[5]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.188      ; 5.388      ;
+; -1.522 ; logick_rotate_ariphmetic_shift[0] ; out[0]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.191      ; 5.388      ;
+; -1.495 ; logick_rotate_ariphmetic_shift[0] ; out[6]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.189      ; 5.366      ;
+; -1.493 ; logick_rotate_ariphmetic_shift[0] ; out[12]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.203      ; 5.334      ;
+; -1.490 ; logick_rotate_ariphmetic_shift[0] ; out[8]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.186      ; 5.343      ;
+; -1.471 ; logick_rotate_ariphmetic_shift[0] ; out[20]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.237      ; 5.379      ;
+; -1.470 ; logick_rotate_ariphmetic_shift[0] ; out[17]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.337      ; 5.328      ;
+; -1.457 ; logick_rotate_ariphmetic_shift[0] ; out[19]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.337      ; 5.315      ;
+; -1.445 ; logick_rotate_ariphmetic_shift[0] ; out[26]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.330      ; 5.304      ;
+; -1.425 ; logick_rotate_ariphmetic_shift[0] ; out[23]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.335      ; 5.321      ;
+; -1.411 ; logick_rotate_ariphmetic_shift[0] ; out[21]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.337      ; 5.295      ;
+; -1.401 ; logick_rotate_ariphmetic_shift[0] ; out[24]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.328      ; 5.284      ;
+; -1.400 ; logick_rotate_ariphmetic_shift[0] ; out[1]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.332      ; 5.253      ;
+; -1.393 ; logick_rotate_ariphmetic_shift[0] ; out[14]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.168      ; 5.237      ;
+; -1.371 ; logick_rotate_ariphmetic_shift[0] ; out[22]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.340      ; 5.261      ;
+; -1.369 ; logick_rotate_ariphmetic_shift[0] ; out[9]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.186      ; 5.232      ;
+; -1.349 ; logick_rotate_ariphmetic_shift[0] ; out[11]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.186      ; 5.208      ;
+; -1.330 ; logick_rotate_ariphmetic_shift[0] ; out[29]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.208      ; 5.210      ;
+; -1.324 ; logick_rotate_ariphmetic_shift[0] ; out[27]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.185      ; 5.326      ;
+; -1.318 ; logick_rotate_ariphmetic_shift[0] ; out[18]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.339      ; 5.208      ;
+; -1.317 ; logick_rotate_ariphmetic_shift[0] ; out[13]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.305      ; 5.183      ;
+; -1.310 ; logick_rotate_ariphmetic_shift[0] ; out[25]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.327      ; 5.191      ;
+; -1.201 ; logick_rotate_ariphmetic_shift[0] ; out[10]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.204      ; 5.543      ;
+; -1.154 ; logick_rotate_ariphmetic_shift[0] ; out[28]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.204      ; 5.497      ;
+; -1.152 ; logick_rotate_ariphmetic_shift[0] ; out[7]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.318      ; 5.524      ;
+; -1.140 ; logick_rotate_ariphmetic_shift[0] ; out[16]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.238      ; 5.518      ;
+; -1.088 ; logick_rotate_ariphmetic_shift[0] ; out[3]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.313      ; 5.455      ;
+; -1.066 ; logick_rotate_ariphmetic_shift[0] ; out[2]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.330      ; 5.415      ;
+; -1.052 ; logick_rotate_ariphmetic_shift[0] ; out[31]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.173      ; 4.901      ;
+; -1.050 ; logick_rotate_ariphmetic_shift[0] ; out[4]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.196      ; 5.395      ;
+; -1.028 ; logick_rotate_ariphmetic_shift[0] ; out[5]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.188      ; 5.388      ;
+; -1.022 ; logick_rotate_ariphmetic_shift[0] ; out[0]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.191      ; 5.388      ;
+; -0.995 ; logick_rotate_ariphmetic_shift[0] ; out[6]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.189      ; 5.366      ;
+; -0.993 ; logick_rotate_ariphmetic_shift[0] ; out[12]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.203      ; 5.334      ;
+; -0.990 ; logick_rotate_ariphmetic_shift[0] ; out[8]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.186      ; 5.343      ;
+; -0.971 ; logick_rotate_ariphmetic_shift[0] ; out[20]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.237      ; 5.379      ;
+; -0.970 ; logick_rotate_ariphmetic_shift[0] ; out[17]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.337      ; 5.328      ;
+; -0.957 ; logick_rotate_ariphmetic_shift[0] ; out[19]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.337      ; 5.315      ;
+; -0.945 ; logick_rotate_ariphmetic_shift[0] ; out[26]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.330      ; 5.304      ;
+; -0.925 ; logick_rotate_ariphmetic_shift[0] ; out[23]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.335      ; 5.321      ;
+; -0.911 ; logick_rotate_ariphmetic_shift[0] ; out[21]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.337      ; 5.295      ;
+; -0.903 ; logick_rotate_ariphmetic_shift[0] ; out[30]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.184      ; 4.910      ;
+; -0.901 ; logick_rotate_ariphmetic_shift[0] ; out[24]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.328      ; 5.284      ;
+; -0.900 ; logick_rotate_ariphmetic_shift[0] ; out[1]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.332      ; 5.253      ;
+; -0.893 ; logick_rotate_ariphmetic_shift[0] ; out[14]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.168      ; 5.237      ;
+; -0.871 ; logick_rotate_ariphmetic_shift[0] ; out[22]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.340      ; 5.261      ;
+; -0.869 ; logick_rotate_ariphmetic_shift[0] ; out[9]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.186      ; 5.232      ;
+; -0.849 ; logick_rotate_ariphmetic_shift[0] ; out[11]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.186      ; 5.208      ;
+; -0.830 ; logick_rotate_ariphmetic_shift[0] ; out[29]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.208      ; 5.210      ;
+; -0.824 ; logick_rotate_ariphmetic_shift[0] ; out[27]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.185      ; 5.326      ;
+; -0.818 ; logick_rotate_ariphmetic_shift[0] ; out[18]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.339      ; 5.208      ;
+; -0.817 ; logick_rotate_ariphmetic_shift[0] ; out[13]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.305      ; 5.183      ;
+; -0.810 ; logick_rotate_ariphmetic_shift[0] ; out[25]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.327      ; 5.191      ;
+; -0.794 ; logick_rotate_ariphmetic_shift[0] ; out[15]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 4.185      ; 4.803      ;
+; -0.552 ; logick_rotate_ariphmetic_shift[0] ; out[31]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.173      ; 4.901      ;
+; -0.403 ; logick_rotate_ariphmetic_shift[0] ; out[30]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.184      ; 4.910      ;
+; -0.294 ; logick_rotate_ariphmetic_shift[0] ; out[15]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 4.185      ; 4.803      ;
++--------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'logick_rotate_ariphmetic_shift[0]'                                                                                                                       ;
++-------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack ; From Node                         ; To Node       ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; 0.529 ; logick_rotate_ariphmetic_shift[0] ; out[19]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.337      ; 4.866      ;
+; 0.532 ; logick_rotate_ariphmetic_shift[0] ; out[23]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.335      ; 4.867      ;
+; 0.549 ; logick_rotate_ariphmetic_shift[0] ; out[3]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.313      ; 4.862      ;
+; 0.567 ; logick_rotate_ariphmetic_shift[0] ; out[1]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.332      ; 4.899      ;
+; 0.605 ; logick_rotate_ariphmetic_shift[0] ; out[22]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.340      ; 4.945      ;
+; 0.609 ; logick_rotate_ariphmetic_shift[0] ; out[13]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.305      ; 4.914      ;
+; 0.609 ; logick_rotate_ariphmetic_shift[0] ; out[17]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.337      ; 4.946      ;
+; 0.611 ; logick_rotate_ariphmetic_shift[0] ; out[18]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.339      ; 4.950      ;
+; 0.618 ; logick_rotate_ariphmetic_shift[0] ; out[15]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.185      ; 4.803      ;
+; 0.631 ; logick_rotate_ariphmetic_shift[0] ; out[21]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.337      ; 4.968      ;
+; 0.645 ; logick_rotate_ariphmetic_shift[0] ; out[2]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.330      ; 4.975      ;
+; 0.651 ; logick_rotate_ariphmetic_shift[0] ; out[24]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.328      ; 4.979      ;
+; 0.652 ; logick_rotate_ariphmetic_shift[0] ; out[26]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.330      ; 4.982      ;
+; 0.658 ; logick_rotate_ariphmetic_shift[0] ; out[25]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.327      ; 4.985      ;
+; 0.720 ; logick_rotate_ariphmetic_shift[0] ; out[5]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.188      ; 4.908      ;
+; 0.726 ; logick_rotate_ariphmetic_shift[0] ; out[30]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.184      ; 4.910      ;
+; 0.728 ; logick_rotate_ariphmetic_shift[0] ; out[31]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.173      ; 4.901      ;
+; 0.741 ; logick_rotate_ariphmetic_shift[0] ; out[7]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.318      ; 5.059      ;
+; 0.758 ; logick_rotate_ariphmetic_shift[0] ; out[29]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.208      ; 4.966      ;
+; 0.771 ; logick_rotate_ariphmetic_shift[0] ; out[12]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.203      ; 4.974      ;
+; 0.779 ; logick_rotate_ariphmetic_shift[0] ; out[8]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.186      ; 4.965      ;
+; 0.780 ; logick_rotate_ariphmetic_shift[0] ; out[6]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.189      ; 4.969      ;
+; 0.815 ; logick_rotate_ariphmetic_shift[0] ; out[14]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.168      ; 4.983      ;
+; 0.825 ; logick_rotate_ariphmetic_shift[0] ; out[4]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.196      ; 5.021      ;
+; 0.830 ; logick_rotate_ariphmetic_shift[0] ; out[10]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.204      ; 5.034      ;
+; 0.836 ; logick_rotate_ariphmetic_shift[0] ; out[0]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.191      ; 5.027      ;
+; 0.840 ; logick_rotate_ariphmetic_shift[0] ; out[28]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.204      ; 5.044      ;
+; 0.849 ; logick_rotate_ariphmetic_shift[0] ; out[20]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.237      ; 5.086      ;
+; 0.850 ; logick_rotate_ariphmetic_shift[0] ; out[9]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.186      ; 5.036      ;
+; 0.852 ; logick_rotate_ariphmetic_shift[0] ; out[11]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.186      ; 5.038      ;
+; 0.877 ; logick_rotate_ariphmetic_shift[0] ; out[27]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.185      ; 5.062      ;
+; 0.979 ; logick_rotate_ariphmetic_shift[0] ; out[16]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 4.238      ; 5.217      ;
+; 1.029 ; logick_rotate_ariphmetic_shift[0] ; out[19]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.337      ; 4.866      ;
+; 1.032 ; logick_rotate_ariphmetic_shift[0] ; out[23]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.335      ; 4.867      ;
+; 1.049 ; logick_rotate_ariphmetic_shift[0] ; out[3]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.313      ; 4.862      ;
+; 1.067 ; logick_rotate_ariphmetic_shift[0] ; out[1]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.332      ; 4.899      ;
+; 1.105 ; logick_rotate_ariphmetic_shift[0] ; out[22]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.340      ; 4.945      ;
+; 1.109 ; logick_rotate_ariphmetic_shift[0] ; out[13]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.305      ; 4.914      ;
+; 1.109 ; logick_rotate_ariphmetic_shift[0] ; out[17]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.337      ; 4.946      ;
+; 1.111 ; logick_rotate_ariphmetic_shift[0] ; out[18]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.339      ; 4.950      ;
+; 1.118 ; logick_rotate_ariphmetic_shift[0] ; out[15]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.185      ; 4.803      ;
+; 1.131 ; logick_rotate_ariphmetic_shift[0] ; out[21]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.337      ; 4.968      ;
+; 1.145 ; logick_rotate_ariphmetic_shift[0] ; out[2]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.330      ; 4.975      ;
+; 1.151 ; logick_rotate_ariphmetic_shift[0] ; out[24]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.328      ; 4.979      ;
+; 1.152 ; logick_rotate_ariphmetic_shift[0] ; out[26]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.330      ; 4.982      ;
+; 1.158 ; logick_rotate_ariphmetic_shift[0] ; out[25]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.327      ; 4.985      ;
+; 1.220 ; logick_rotate_ariphmetic_shift[0] ; out[5]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.188      ; 4.908      ;
+; 1.226 ; logick_rotate_ariphmetic_shift[0] ; out[30]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.184      ; 4.910      ;
+; 1.228 ; logick_rotate_ariphmetic_shift[0] ; out[31]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.173      ; 4.901      ;
+; 1.241 ; logick_rotate_ariphmetic_shift[0] ; out[7]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.318      ; 5.059      ;
+; 1.258 ; logick_rotate_ariphmetic_shift[0] ; out[29]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.208      ; 4.966      ;
+; 1.271 ; logick_rotate_ariphmetic_shift[0] ; out[12]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.203      ; 4.974      ;
+; 1.279 ; logick_rotate_ariphmetic_shift[0] ; out[8]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.186      ; 4.965      ;
+; 1.280 ; logick_rotate_ariphmetic_shift[0] ; out[6]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.189      ; 4.969      ;
+; 1.315 ; logick_rotate_ariphmetic_shift[0] ; out[14]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.168      ; 4.983      ;
+; 1.325 ; logick_rotate_ariphmetic_shift[0] ; out[4]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.196      ; 5.021      ;
+; 1.330 ; logick_rotate_ariphmetic_shift[0] ; out[10]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.204      ; 5.034      ;
+; 1.336 ; logick_rotate_ariphmetic_shift[0] ; out[0]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.191      ; 5.027      ;
+; 1.340 ; logick_rotate_ariphmetic_shift[0] ; out[28]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.204      ; 5.044      ;
+; 1.349 ; logick_rotate_ariphmetic_shift[0] ; out[20]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.237      ; 5.086      ;
+; 1.350 ; logick_rotate_ariphmetic_shift[0] ; out[9]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.186      ; 5.036      ;
+; 1.352 ; logick_rotate_ariphmetic_shift[0] ; out[11]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.186      ; 5.038      ;
+; 1.377 ; logick_rotate_ariphmetic_shift[0] ; out[27]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.185      ; 5.062      ;
+; 1.479 ; logick_rotate_ariphmetic_shift[0] ; out[16]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 4.238      ; 5.217      ;
++-------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'logick_rotate_ariphmetic_shift[0]'                                                                                    ;
++--------+--------------+----------------+------------------+-----------------------------------+------------+-------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                             ; Clock Edge ; Target                                    ;
++--------+--------------+----------------+------------------+-----------------------------------+------------+-------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; logick_rotate_ariphmetic_shift[0] ; Rise       ; logick_rotate_ariphmetic_shift[0]         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0clkctrl|inclk[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0clkctrl|inclk[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0clkctrl|outclk                     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0clkctrl|outclk                     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0|combout                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0|combout                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; Mux32~0|datad                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; Mux32~0|datad                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; logick_rotate_ariphmetic_shift[0]|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; logick_rotate_ariphmetic_shift[0]|combout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[0]$latch                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[0]$latch                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[0]$latch|datad                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[0]$latch|datad                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[10]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[10]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[10]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[10]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[11]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[11]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[11]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[11]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[12]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[12]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[12]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[12]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[13]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[13]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[13]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[13]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[14]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[14]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[14]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[14]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[15]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[15]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[15]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[15]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[16]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[16]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[16]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[16]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[17]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[17]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[17]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[17]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[18]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[18]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[18]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[18]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[19]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[19]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[19]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[19]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[1]$latch                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[1]$latch                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[1]$latch|datac                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[1]$latch|datac                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[20]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[20]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[20]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[20]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[21]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[21]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[21]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[21]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[22]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[22]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[22]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[22]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[23]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[23]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[23]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[23]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[24]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[24]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[24]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[24]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[25]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[25]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[25]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[25]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[26]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[26]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[26]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[26]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[27]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[27]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[27]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[27]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[28]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[28]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[28]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[28]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[29]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[29]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[29]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[29]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[2]$latch                              ;
++--------+--------------+----------------+------------------+-----------------------------------+------------+-------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                                                               ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; Data Port                          ; Clock Port                        ; Rise   ; Fall   ; Clock Edge ; Clock Reference                   ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; in[*]                              ; logick_rotate_ariphmetic_shift[0] ; 55.652 ; 55.652 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[0]                             ; logick_rotate_ariphmetic_shift[0] ; 55.150 ; 55.150 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[1]                             ; logick_rotate_ariphmetic_shift[0] ; 55.032 ; 55.032 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[2]                             ; logick_rotate_ariphmetic_shift[0] ; 55.068 ; 55.068 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[3]                             ; logick_rotate_ariphmetic_shift[0] ; 54.860 ; 54.860 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[4]                             ; logick_rotate_ariphmetic_shift[0] ; 54.811 ; 54.811 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[5]                             ; logick_rotate_ariphmetic_shift[0] ; 54.787 ; 54.787 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[6]                             ; logick_rotate_ariphmetic_shift[0] ; 54.616 ; 54.616 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[7]                             ; logick_rotate_ariphmetic_shift[0] ; 54.453 ; 54.453 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[8]                             ; logick_rotate_ariphmetic_shift[0] ; 54.828 ; 54.828 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[9]                             ; logick_rotate_ariphmetic_shift[0] ; 53.997 ; 53.997 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[10]                            ; logick_rotate_ariphmetic_shift[0] ; 54.310 ; 54.310 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[11]                            ; logick_rotate_ariphmetic_shift[0] ; 54.774 ; 54.774 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[12]                            ; logick_rotate_ariphmetic_shift[0] ; 54.520 ; 54.520 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[13]                            ; logick_rotate_ariphmetic_shift[0] ; 54.803 ; 54.803 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[14]                            ; logick_rotate_ariphmetic_shift[0] ; 54.721 ; 54.721 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[15]                            ; logick_rotate_ariphmetic_shift[0] ; 54.506 ; 54.506 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[16]                            ; logick_rotate_ariphmetic_shift[0] ; 54.437 ; 54.437 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[17]                            ; logick_rotate_ariphmetic_shift[0] ; 54.296 ; 54.296 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[18]                            ; logick_rotate_ariphmetic_shift[0] ; 54.908 ; 54.908 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[19]                            ; logick_rotate_ariphmetic_shift[0] ; 55.101 ; 55.101 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[20]                            ; logick_rotate_ariphmetic_shift[0] ; 55.189 ; 55.189 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[21]                            ; logick_rotate_ariphmetic_shift[0] ; 55.206 ; 55.206 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[22]                            ; logick_rotate_ariphmetic_shift[0] ; 54.844 ; 54.844 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[23]                            ; logick_rotate_ariphmetic_shift[0] ; 55.219 ; 55.219 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[24]                            ; logick_rotate_ariphmetic_shift[0] ; 54.635 ; 54.635 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[25]                            ; logick_rotate_ariphmetic_shift[0] ; 54.796 ; 54.796 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[26]                            ; logick_rotate_ariphmetic_shift[0] ; 54.206 ; 54.206 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[27]                            ; logick_rotate_ariphmetic_shift[0] ; 54.883 ; 54.883 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[28]                            ; logick_rotate_ariphmetic_shift[0] ; 55.650 ; 55.650 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[29]                            ; logick_rotate_ariphmetic_shift[0] ; 55.652 ; 55.652 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[30]                            ; logick_rotate_ariphmetic_shift[0] ; 55.279 ; 55.279 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[31]                            ; logick_rotate_ariphmetic_shift[0] ; 54.831 ; 54.831 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; left_of_right                      ; logick_rotate_ariphmetic_shift[0] ; 56.998 ; 56.998 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; logick_rotate_ariphmetic_shift[*]  ; logick_rotate_ariphmetic_shift[0] ; 8.695  ; 8.695  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 2.201  ; 2.201  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[1] ; logick_rotate_ariphmetic_shift[0] ; 8.695  ; 8.695  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; sl[*]                              ; logick_rotate_ariphmetic_shift[0] ; 57.902 ; 57.902 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[0]                             ; logick_rotate_ariphmetic_shift[0] ; 56.446 ; 56.446 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[1]                             ; logick_rotate_ariphmetic_shift[0] ; 57.017 ; 57.017 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[2]                             ; logick_rotate_ariphmetic_shift[0] ; 57.390 ; 57.390 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[3]                             ; logick_rotate_ariphmetic_shift[0] ; 57.902 ; 57.902 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[4]                             ; logick_rotate_ariphmetic_shift[0] ; 57.666 ; 57.666 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                                                                ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; Data Port                          ; Clock Port                        ; Rise   ; Fall   ; Clock Edge ; Clock Reference                   ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; in[*]                              ; logick_rotate_ariphmetic_shift[0] ; -3.816 ; -3.816 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[0]                             ; logick_rotate_ariphmetic_shift[0] ; -4.952 ; -4.952 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[1]                             ; logick_rotate_ariphmetic_shift[0] ; -5.240 ; -5.240 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[2]                             ; logick_rotate_ariphmetic_shift[0] ; -5.306 ; -5.306 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[3]                             ; logick_rotate_ariphmetic_shift[0] ; -5.145 ; -5.145 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[4]                             ; logick_rotate_ariphmetic_shift[0] ; -5.120 ; -5.120 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[5]                             ; logick_rotate_ariphmetic_shift[0] ; -5.918 ; -5.918 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[6]                             ; logick_rotate_ariphmetic_shift[0] ; -5.905 ; -5.905 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[7]                             ; logick_rotate_ariphmetic_shift[0] ; -5.570 ; -5.570 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[8]                             ; logick_rotate_ariphmetic_shift[0] ; -5.965 ; -5.965 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[9]                             ; logick_rotate_ariphmetic_shift[0] ; -4.791 ; -4.791 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[10]                            ; logick_rotate_ariphmetic_shift[0] ; -5.200 ; -5.200 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[11]                            ; logick_rotate_ariphmetic_shift[0] ; -5.575 ; -5.575 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[12]                            ; logick_rotate_ariphmetic_shift[0] ; -5.019 ; -5.019 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[13]                            ; logick_rotate_ariphmetic_shift[0] ; -5.816 ; -5.816 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[14]                            ; logick_rotate_ariphmetic_shift[0] ; -6.100 ; -6.100 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[15]                            ; logick_rotate_ariphmetic_shift[0] ; -6.033 ; -6.033 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[16]                            ; logick_rotate_ariphmetic_shift[0] ; -5.633 ; -5.633 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[17]                            ; logick_rotate_ariphmetic_shift[0] ; -5.884 ; -5.884 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[18]                            ; logick_rotate_ariphmetic_shift[0] ; -5.623 ; -5.623 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[19]                            ; logick_rotate_ariphmetic_shift[0] ; -5.805 ; -5.805 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[20]                            ; logick_rotate_ariphmetic_shift[0] ; -5.194 ; -5.194 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[21]                            ; logick_rotate_ariphmetic_shift[0] ; -5.368 ; -5.368 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[22]                            ; logick_rotate_ariphmetic_shift[0] ; -4.797 ; -4.797 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[23]                            ; logick_rotate_ariphmetic_shift[0] ; -4.776 ; -4.776 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[24]                            ; logick_rotate_ariphmetic_shift[0] ; -4.478 ; -4.478 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[25]                            ; logick_rotate_ariphmetic_shift[0] ; -3.996 ; -3.996 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[26]                            ; logick_rotate_ariphmetic_shift[0] ; -3.816 ; -3.816 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[27]                            ; logick_rotate_ariphmetic_shift[0] ; -4.195 ; -4.195 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[28]                            ; logick_rotate_ariphmetic_shift[0] ; -5.090 ; -5.090 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[29]                            ; logick_rotate_ariphmetic_shift[0] ; -4.579 ; -4.579 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[30]                            ; logick_rotate_ariphmetic_shift[0] ; -3.961 ; -3.961 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[31]                            ; logick_rotate_ariphmetic_shift[0] ; -5.104 ; -5.104 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; left_of_right                      ; logick_rotate_ariphmetic_shift[0] ; -3.922 ; -3.922 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; logick_rotate_ariphmetic_shift[*]  ; logick_rotate_ariphmetic_shift[0] ; -0.529 ; -0.529 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.529 ; -0.529 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[1] ; logick_rotate_ariphmetic_shift[0] ; -2.684 ; -2.684 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; sl[*]                              ; logick_rotate_ariphmetic_shift[0] ; -2.797 ; -2.797 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[0]                             ; logick_rotate_ariphmetic_shift[0] ; -4.371 ; -4.371 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[1]                             ; logick_rotate_ariphmetic_shift[0] ; -3.525 ; -3.525 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[2]                             ; logick_rotate_ariphmetic_shift[0] ; -3.980 ; -3.980 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[3]                             ; logick_rotate_ariphmetic_shift[0] ; -4.434 ; -4.434 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[4]                             ; logick_rotate_ariphmetic_shift[0] ; -2.797 ; -2.797 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                          ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; Data Port ; Clock Port                        ; Rise  ; Fall  ; Clock Edge ; Clock Reference                   ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; out[*]    ; logick_rotate_ariphmetic_shift[0] ; 9.001 ; 9.001 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[0]   ; logick_rotate_ariphmetic_shift[0] ; 8.069 ; 8.069 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[1]   ; logick_rotate_ariphmetic_shift[0] ; 8.068 ; 8.068 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[2]   ; logick_rotate_ariphmetic_shift[0] ; 8.154 ; 8.154 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[3]   ; logick_rotate_ariphmetic_shift[0] ; 8.418 ; 8.418 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[4]   ; logick_rotate_ariphmetic_shift[0] ; 9.001 ; 9.001 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[5]   ; logick_rotate_ariphmetic_shift[0] ; 8.096 ; 8.096 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[6]   ; logick_rotate_ariphmetic_shift[0] ; 7.686 ; 7.686 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[7]   ; logick_rotate_ariphmetic_shift[0] ; 8.690 ; 8.690 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[8]   ; logick_rotate_ariphmetic_shift[0] ; 8.293 ; 8.293 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[9]   ; logick_rotate_ariphmetic_shift[0] ; 8.490 ; 8.490 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[10]  ; logick_rotate_ariphmetic_shift[0] ; 8.053 ; 8.053 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[11]  ; logick_rotate_ariphmetic_shift[0] ; 8.356 ; 8.356 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[12]  ; logick_rotate_ariphmetic_shift[0] ; 8.826 ; 8.826 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[13]  ; logick_rotate_ariphmetic_shift[0] ; 8.407 ; 8.407 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[14]  ; logick_rotate_ariphmetic_shift[0] ; 8.498 ; 8.498 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[15]  ; logick_rotate_ariphmetic_shift[0] ; 8.274 ; 8.274 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[16]  ; logick_rotate_ariphmetic_shift[0] ; 7.903 ; 7.903 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[17]  ; logick_rotate_ariphmetic_shift[0] ; 8.201 ; 8.201 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[18]  ; logick_rotate_ariphmetic_shift[0] ; 8.634 ; 8.634 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[19]  ; logick_rotate_ariphmetic_shift[0] ; 8.394 ; 8.394 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[20]  ; logick_rotate_ariphmetic_shift[0] ; 8.518 ; 8.518 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[21]  ; logick_rotate_ariphmetic_shift[0] ; 8.627 ; 8.627 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[22]  ; logick_rotate_ariphmetic_shift[0] ; 8.532 ; 8.532 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[23]  ; logick_rotate_ariphmetic_shift[0] ; 8.848 ; 8.848 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[24]  ; logick_rotate_ariphmetic_shift[0] ; 7.674 ; 7.674 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[25]  ; logick_rotate_ariphmetic_shift[0] ; 7.668 ; 7.668 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[26]  ; logick_rotate_ariphmetic_shift[0] ; 7.738 ; 7.738 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[27]  ; logick_rotate_ariphmetic_shift[0] ; 8.039 ; 8.039 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[28]  ; logick_rotate_ariphmetic_shift[0] ; 8.749 ; 8.749 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[29]  ; logick_rotate_ariphmetic_shift[0] ; 8.527 ; 8.527 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[30]  ; logick_rotate_ariphmetic_shift[0] ; 8.505 ; 8.505 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[31]  ; logick_rotate_ariphmetic_shift[0] ; 8.270 ; 8.270 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                  ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; Data Port ; Clock Port                        ; Rise  ; Fall  ; Clock Edge ; Clock Reference                   ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; out[*]    ; logick_rotate_ariphmetic_shift[0] ; 7.668 ; 7.668 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[0]   ; logick_rotate_ariphmetic_shift[0] ; 8.069 ; 8.069 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[1]   ; logick_rotate_ariphmetic_shift[0] ; 8.068 ; 8.068 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[2]   ; logick_rotate_ariphmetic_shift[0] ; 8.154 ; 8.154 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[3]   ; logick_rotate_ariphmetic_shift[0] ; 8.418 ; 8.418 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[4]   ; logick_rotate_ariphmetic_shift[0] ; 9.001 ; 9.001 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[5]   ; logick_rotate_ariphmetic_shift[0] ; 8.096 ; 8.096 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[6]   ; logick_rotate_ariphmetic_shift[0] ; 7.686 ; 7.686 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[7]   ; logick_rotate_ariphmetic_shift[0] ; 8.690 ; 8.690 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[8]   ; logick_rotate_ariphmetic_shift[0] ; 8.293 ; 8.293 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[9]   ; logick_rotate_ariphmetic_shift[0] ; 8.490 ; 8.490 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[10]  ; logick_rotate_ariphmetic_shift[0] ; 8.053 ; 8.053 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[11]  ; logick_rotate_ariphmetic_shift[0] ; 8.356 ; 8.356 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[12]  ; logick_rotate_ariphmetic_shift[0] ; 8.826 ; 8.826 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[13]  ; logick_rotate_ariphmetic_shift[0] ; 8.407 ; 8.407 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[14]  ; logick_rotate_ariphmetic_shift[0] ; 8.498 ; 8.498 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[15]  ; logick_rotate_ariphmetic_shift[0] ; 8.274 ; 8.274 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[16]  ; logick_rotate_ariphmetic_shift[0] ; 7.903 ; 7.903 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[17]  ; logick_rotate_ariphmetic_shift[0] ; 8.201 ; 8.201 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[18]  ; logick_rotate_ariphmetic_shift[0] ; 8.634 ; 8.634 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[19]  ; logick_rotate_ariphmetic_shift[0] ; 8.394 ; 8.394 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[20]  ; logick_rotate_ariphmetic_shift[0] ; 8.518 ; 8.518 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[21]  ; logick_rotate_ariphmetic_shift[0] ; 8.627 ; 8.627 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[22]  ; logick_rotate_ariphmetic_shift[0] ; 8.532 ; 8.532 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[23]  ; logick_rotate_ariphmetic_shift[0] ; 8.848 ; 8.848 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[24]  ; logick_rotate_ariphmetic_shift[0] ; 7.674 ; 7.674 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[25]  ; logick_rotate_ariphmetic_shift[0] ; 7.668 ; 7.668 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[26]  ; logick_rotate_ariphmetic_shift[0] ; 7.738 ; 7.738 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[27]  ; logick_rotate_ariphmetic_shift[0] ; 8.039 ; 8.039 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[28]  ; logick_rotate_ariphmetic_shift[0] ; 8.749 ; 8.749 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[29]  ; logick_rotate_ariphmetic_shift[0] ; 8.527 ; 8.527 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[30]  ; logick_rotate_ariphmetic_shift[0] ; 8.505 ; 8.505 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[31]  ; logick_rotate_ariphmetic_shift[0] ; 8.270 ; 8.270 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+
+
++------------------------------------------------------------+
+; Fast Model Setup Summary                                   ;
++-----------------------------------+--------+---------------+
+; Clock                             ; Slack  ; End Point TNS ;
++-----------------------------------+--------+---------------+
+; logick_rotate_ariphmetic_shift[0] ; -0.118 ; -0.616        ;
++-----------------------------------+--------+---------------+
+
+
++------------------------------------------------------------+
+; Fast Model Hold Summary                                    ;
++-----------------------------------+--------+---------------+
+; Clock                             ; Slack  ; End Point TNS ;
++-----------------------------------+--------+---------------+
+; logick_rotate_ariphmetic_shift[0] ; -0.079 ; -0.678        ;
++-----------------------------------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++------------------------------------------------------------+
+; Fast Model Minimum Pulse Width Summary                     ;
++-----------------------------------+--------+---------------+
+; Clock                             ; Slack  ; End Point TNS ;
++-----------------------------------+--------+---------------+
+; logick_rotate_ariphmetic_shift[0] ; -1.222 ; -1.222        ;
++-----------------------------------+--------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'logick_rotate_ariphmetic_shift[0]'                                                                                                                       ;
++--------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node       ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -0.118 ; logick_rotate_ariphmetic_shift[0] ; out[7]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.357      ; 2.586      ;
+; -0.080 ; logick_rotate_ariphmetic_shift[0] ; out[10]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.317      ; 2.542      ;
+; -0.076 ; logick_rotate_ariphmetic_shift[0] ; out[3]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.355      ; 2.542      ;
+; -0.063 ; logick_rotate_ariphmetic_shift[0] ; out[28]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.317      ; 2.526      ;
+; -0.056 ; logick_rotate_ariphmetic_shift[0] ; out[16]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.334      ; 2.536      ;
+; -0.055 ; logick_rotate_ariphmetic_shift[0] ; out[2]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.367      ; 2.520      ;
+; -0.053 ; logick_rotate_ariphmetic_shift[0] ; out[5]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.306      ; 2.515      ;
+; -0.044 ; logick_rotate_ariphmetic_shift[0] ; out[4]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.311      ; 2.505      ;
+; -0.031 ; logick_rotate_ariphmetic_shift[0] ; out[6]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.306      ; 2.499      ;
+; -0.027 ; logick_rotate_ariphmetic_shift[0] ; out[0]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.309      ; 2.495      ;
+; -0.013 ; logick_rotate_ariphmetic_shift[0] ; out[8]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.305      ; 2.472      ;
+; 0.007  ; logick_rotate_ariphmetic_shift[0] ; out[26]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.368      ; 2.463      ;
+; 0.010  ; logick_rotate_ariphmetic_shift[0] ; out[20]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.334      ; 2.481      ;
+; 0.011  ; logick_rotate_ariphmetic_shift[0] ; out[12]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.316      ; 2.450      ;
+; 0.015  ; logick_rotate_ariphmetic_shift[0] ; out[17]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.372      ; 2.457      ;
+; 0.017  ; logick_rotate_ariphmetic_shift[0] ; out[19]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.371      ; 2.454      ;
+; 0.023  ; logick_rotate_ariphmetic_shift[0] ; out[14]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.295      ; 2.431      ;
+; 0.026  ; logick_rotate_ariphmetic_shift[0] ; out[24]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.366      ; 2.451      ;
+; 0.030  ; logick_rotate_ariphmetic_shift[0] ; out[23]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.370      ; 2.453      ;
+; 0.036  ; logick_rotate_ariphmetic_shift[0] ; out[1]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.368      ; 2.432      ;
+; 0.037  ; logick_rotate_ariphmetic_shift[0] ; out[13]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.350      ; 2.426      ;
+; 0.048  ; logick_rotate_ariphmetic_shift[0] ; out[9]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.306      ; 2.418      ;
+; 0.048  ; logick_rotate_ariphmetic_shift[0] ; out[22]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.374      ; 2.434      ;
+; 0.048  ; logick_rotate_ariphmetic_shift[0] ; out[25]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.365      ; 2.428      ;
+; 0.049  ; logick_rotate_ariphmetic_shift[0] ; out[21]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.371      ; 2.429      ;
+; 0.051  ; logick_rotate_ariphmetic_shift[0] ; out[11]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.306      ; 2.413      ;
+; 0.063  ; logick_rotate_ariphmetic_shift[0] ; out[27]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.306      ; 2.470      ;
+; 0.071  ; logick_rotate_ariphmetic_shift[0] ; out[18]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.373      ; 2.410      ;
+; 0.074  ; logick_rotate_ariphmetic_shift[0] ; out[29]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.320      ; 2.403      ;
+; 0.118  ; logick_rotate_ariphmetic_shift[0] ; out[31]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.298      ; 2.339      ;
+; 0.150  ; logick_rotate_ariphmetic_shift[0] ; out[30]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.305      ; 2.384      ;
+; 0.249  ; logick_rotate_ariphmetic_shift[0] ; out[15]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.500        ; 2.306      ; 2.286      ;
+; 0.382  ; logick_rotate_ariphmetic_shift[0] ; out[7]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.357      ; 2.586      ;
+; 0.420  ; logick_rotate_ariphmetic_shift[0] ; out[10]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.317      ; 2.542      ;
+; 0.424  ; logick_rotate_ariphmetic_shift[0] ; out[3]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.355      ; 2.542      ;
+; 0.437  ; logick_rotate_ariphmetic_shift[0] ; out[28]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.317      ; 2.526      ;
+; 0.444  ; logick_rotate_ariphmetic_shift[0] ; out[16]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.334      ; 2.536      ;
+; 0.445  ; logick_rotate_ariphmetic_shift[0] ; out[2]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.367      ; 2.520      ;
+; 0.447  ; logick_rotate_ariphmetic_shift[0] ; out[5]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.306      ; 2.515      ;
+; 0.456  ; logick_rotate_ariphmetic_shift[0] ; out[4]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.311      ; 2.505      ;
+; 0.469  ; logick_rotate_ariphmetic_shift[0] ; out[6]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.306      ; 2.499      ;
+; 0.473  ; logick_rotate_ariphmetic_shift[0] ; out[0]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.309      ; 2.495      ;
+; 0.487  ; logick_rotate_ariphmetic_shift[0] ; out[8]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.305      ; 2.472      ;
+; 0.507  ; logick_rotate_ariphmetic_shift[0] ; out[26]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.368      ; 2.463      ;
+; 0.510  ; logick_rotate_ariphmetic_shift[0] ; out[20]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.334      ; 2.481      ;
+; 0.511  ; logick_rotate_ariphmetic_shift[0] ; out[12]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.316      ; 2.450      ;
+; 0.515  ; logick_rotate_ariphmetic_shift[0] ; out[17]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.372      ; 2.457      ;
+; 0.517  ; logick_rotate_ariphmetic_shift[0] ; out[19]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.371      ; 2.454      ;
+; 0.523  ; logick_rotate_ariphmetic_shift[0] ; out[14]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.295      ; 2.431      ;
+; 0.526  ; logick_rotate_ariphmetic_shift[0] ; out[24]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.366      ; 2.451      ;
+; 0.530  ; logick_rotate_ariphmetic_shift[0] ; out[23]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.370      ; 2.453      ;
+; 0.536  ; logick_rotate_ariphmetic_shift[0] ; out[1]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.368      ; 2.432      ;
+; 0.537  ; logick_rotate_ariphmetic_shift[0] ; out[13]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.350      ; 2.426      ;
+; 0.548  ; logick_rotate_ariphmetic_shift[0] ; out[9]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.306      ; 2.418      ;
+; 0.548  ; logick_rotate_ariphmetic_shift[0] ; out[22]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.374      ; 2.434      ;
+; 0.548  ; logick_rotate_ariphmetic_shift[0] ; out[25]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.365      ; 2.428      ;
+; 0.549  ; logick_rotate_ariphmetic_shift[0] ; out[21]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.371      ; 2.429      ;
+; 0.551  ; logick_rotate_ariphmetic_shift[0] ; out[11]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.306      ; 2.413      ;
+; 0.563  ; logick_rotate_ariphmetic_shift[0] ; out[27]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.306      ; 2.470      ;
+; 0.571  ; logick_rotate_ariphmetic_shift[0] ; out[18]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.373      ; 2.410      ;
+; 0.574  ; logick_rotate_ariphmetic_shift[0] ; out[29]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.320      ; 2.403      ;
+; 0.618  ; logick_rotate_ariphmetic_shift[0] ; out[31]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.298      ; 2.339      ;
+; 0.650  ; logick_rotate_ariphmetic_shift[0] ; out[30]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.305      ; 2.384      ;
+; 0.749  ; logick_rotate_ariphmetic_shift[0] ; out[15]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 1.000        ; 2.306      ; 2.286      ;
++--------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'logick_rotate_ariphmetic_shift[0]'                                                                                                                        ;
++--------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                         ; To Node       ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -0.079 ; logick_rotate_ariphmetic_shift[0] ; out[19]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.371      ; 2.292      ;
+; -0.078 ; logick_rotate_ariphmetic_shift[0] ; out[22]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.374      ; 2.296      ;
+; -0.075 ; logick_rotate_ariphmetic_shift[0] ; out[23]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.370      ; 2.295      ;
+; -0.073 ; logick_rotate_ariphmetic_shift[0] ; out[3]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.355      ; 2.282      ;
+; -0.071 ; logick_rotate_ariphmetic_shift[0] ; out[18]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.373      ; 2.302      ;
+; -0.046 ; logick_rotate_ariphmetic_shift[0] ; out[1]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.368      ; 2.322      ;
+; -0.046 ; logick_rotate_ariphmetic_shift[0] ; out[17]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.372      ; 2.326      ;
+; -0.040 ; logick_rotate_ariphmetic_shift[0] ; out[21]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.371      ; 2.331      ;
+; -0.032 ; logick_rotate_ariphmetic_shift[0] ; out[25]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.365      ; 2.333      ;
+; -0.027 ; logick_rotate_ariphmetic_shift[0] ; out[24]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.366      ; 2.339      ;
+; -0.024 ; logick_rotate_ariphmetic_shift[0] ; out[26]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.368      ; 2.344      ;
+; -0.023 ; logick_rotate_ariphmetic_shift[0] ; out[13]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.350      ; 2.327      ;
+; -0.020 ; logick_rotate_ariphmetic_shift[0] ; out[15]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.306      ; 2.286      ;
+; -0.018 ; logick_rotate_ariphmetic_shift[0] ; out[5]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.306      ; 2.288      ;
+; -0.015 ; logick_rotate_ariphmetic_shift[0] ; out[2]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.367      ; 2.352      ;
+; -0.011 ; logick_rotate_ariphmetic_shift[0] ; out[29]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.320      ; 2.309      ;
+; 0.027  ; logick_rotate_ariphmetic_shift[0] ; out[20]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.334      ; 2.361      ;
+; 0.029  ; logick_rotate_ariphmetic_shift[0] ; out[7]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.357      ; 2.386      ;
+; 0.038  ; logick_rotate_ariphmetic_shift[0] ; out[9]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.306      ; 2.344      ;
+; 0.041  ; logick_rotate_ariphmetic_shift[0] ; out[31]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.298      ; 2.339      ;
+; 0.044  ; logick_rotate_ariphmetic_shift[0] ; out[11]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.306      ; 2.350      ;
+; 0.044  ; logick_rotate_ariphmetic_shift[0] ; out[28]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.317      ; 2.361      ;
+; 0.050  ; logick_rotate_ariphmetic_shift[0] ; out[8]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.305      ; 2.355      ;
+; 0.051  ; logick_rotate_ariphmetic_shift[0] ; out[12]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.316      ; 2.367      ;
+; 0.055  ; logick_rotate_ariphmetic_shift[0] ; out[0]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.309      ; 2.364      ;
+; 0.066  ; logick_rotate_ariphmetic_shift[0] ; out[10]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.317      ; 2.383      ;
+; 0.066  ; logick_rotate_ariphmetic_shift[0] ; out[27]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.306      ; 2.372      ;
+; 0.067  ; logick_rotate_ariphmetic_shift[0] ; out[4]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.311      ; 2.378      ;
+; 0.069  ; logick_rotate_ariphmetic_shift[0] ; out[6]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.306      ; 2.375      ;
+; 0.071  ; logick_rotate_ariphmetic_shift[0] ; out[16]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.334      ; 2.405      ;
+; 0.072  ; logick_rotate_ariphmetic_shift[0] ; out[14]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.295      ; 2.367      ;
+; 0.079  ; logick_rotate_ariphmetic_shift[0] ; out[30]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.000        ; 2.305      ; 2.384      ;
+; 0.421  ; logick_rotate_ariphmetic_shift[0] ; out[19]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.371      ; 2.292      ;
+; 0.422  ; logick_rotate_ariphmetic_shift[0] ; out[22]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.374      ; 2.296      ;
+; 0.425  ; logick_rotate_ariphmetic_shift[0] ; out[23]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.370      ; 2.295      ;
+; 0.427  ; logick_rotate_ariphmetic_shift[0] ; out[3]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.355      ; 2.282      ;
+; 0.429  ; logick_rotate_ariphmetic_shift[0] ; out[18]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.373      ; 2.302      ;
+; 0.454  ; logick_rotate_ariphmetic_shift[0] ; out[1]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.368      ; 2.322      ;
+; 0.454  ; logick_rotate_ariphmetic_shift[0] ; out[17]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.372      ; 2.326      ;
+; 0.460  ; logick_rotate_ariphmetic_shift[0] ; out[21]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.371      ; 2.331      ;
+; 0.468  ; logick_rotate_ariphmetic_shift[0] ; out[25]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.365      ; 2.333      ;
+; 0.473  ; logick_rotate_ariphmetic_shift[0] ; out[24]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.366      ; 2.339      ;
+; 0.476  ; logick_rotate_ariphmetic_shift[0] ; out[26]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.368      ; 2.344      ;
+; 0.477  ; logick_rotate_ariphmetic_shift[0] ; out[13]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.350      ; 2.327      ;
+; 0.480  ; logick_rotate_ariphmetic_shift[0] ; out[15]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.306      ; 2.286      ;
+; 0.482  ; logick_rotate_ariphmetic_shift[0] ; out[5]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.306      ; 2.288      ;
+; 0.485  ; logick_rotate_ariphmetic_shift[0] ; out[2]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.367      ; 2.352      ;
+; 0.489  ; logick_rotate_ariphmetic_shift[0] ; out[29]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.320      ; 2.309      ;
+; 0.527  ; logick_rotate_ariphmetic_shift[0] ; out[20]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.334      ; 2.361      ;
+; 0.529  ; logick_rotate_ariphmetic_shift[0] ; out[7]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.357      ; 2.386      ;
+; 0.538  ; logick_rotate_ariphmetic_shift[0] ; out[9]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.306      ; 2.344      ;
+; 0.541  ; logick_rotate_ariphmetic_shift[0] ; out[31]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.298      ; 2.339      ;
+; 0.544  ; logick_rotate_ariphmetic_shift[0] ; out[11]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.306      ; 2.350      ;
+; 0.544  ; logick_rotate_ariphmetic_shift[0] ; out[28]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.317      ; 2.361      ;
+; 0.550  ; logick_rotate_ariphmetic_shift[0] ; out[8]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.305      ; 2.355      ;
+; 0.551  ; logick_rotate_ariphmetic_shift[0] ; out[12]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.316      ; 2.367      ;
+; 0.555  ; logick_rotate_ariphmetic_shift[0] ; out[0]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.309      ; 2.364      ;
+; 0.566  ; logick_rotate_ariphmetic_shift[0] ; out[10]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.317      ; 2.383      ;
+; 0.566  ; logick_rotate_ariphmetic_shift[0] ; out[27]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.306      ; 2.372      ;
+; 0.567  ; logick_rotate_ariphmetic_shift[0] ; out[4]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.311      ; 2.378      ;
+; 0.569  ; logick_rotate_ariphmetic_shift[0] ; out[6]$latch  ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.306      ; 2.375      ;
+; 0.571  ; logick_rotate_ariphmetic_shift[0] ; out[16]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.334      ; 2.405      ;
+; 0.572  ; logick_rotate_ariphmetic_shift[0] ; out[14]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.295      ; 2.367      ;
+; 0.579  ; logick_rotate_ariphmetic_shift[0] ; out[30]$latch ; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; -0.500       ; 2.305      ; 2.384      ;
++--------+-----------------------------------+---------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'logick_rotate_ariphmetic_shift[0]'                                                                                    ;
++--------+--------------+----------------+------------------+-----------------------------------+------------+-------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock                             ; Clock Edge ; Target                                    ;
++--------+--------------+----------------+------------------+-----------------------------------+------------+-------------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; logick_rotate_ariphmetic_shift[0] ; Rise       ; logick_rotate_ariphmetic_shift[0]         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0clkctrl|inclk[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0clkctrl|inclk[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0clkctrl|outclk                     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0clkctrl|outclk                     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0|combout                           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; Mux32~0|combout                           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; Mux32~0|datad                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; Mux32~0|datad                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; logick_rotate_ariphmetic_shift[0]|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; logick_rotate_ariphmetic_shift[0]|combout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[0]$latch                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[0]$latch                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[0]$latch|datad                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[0]$latch|datad                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[10]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[10]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[10]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[10]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[11]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[11]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[11]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[11]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[12]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[12]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[12]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[12]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[13]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[13]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[13]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[13]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[14]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[14]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[14]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[14]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[15]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[15]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[15]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[15]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[16]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[16]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[16]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[16]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[17]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[17]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[17]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[17]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[18]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[18]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[18]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[18]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[19]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[19]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[19]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[19]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[1]$latch                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[1]$latch                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[1]$latch|datac                        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[1]$latch|datac                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[20]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[20]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[20]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[20]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[21]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[21]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[21]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[21]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[22]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[22]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[22]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[22]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[23]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[23]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[23]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[23]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[24]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[24]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[24]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[24]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[25]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[25]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[25]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[25]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[26]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[26]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[26]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[26]$latch|datac                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[27]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[27]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[27]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[27]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[28]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[28]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[28]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[28]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[29]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[29]$latch                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[29]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; logick_rotate_ariphmetic_shift[0] ; Fall       ; out[29]$latch|datad                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; logick_rotate_ariphmetic_shift[0] ; Rise       ; out[2]$latch                              ;
++--------+--------------+----------------+------------------+-----------------------------------+------------+-------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                                                               ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; Data Port                          ; Clock Port                        ; Rise   ; Fall   ; Clock Edge ; Clock Reference                   ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; in[*]                              ; logick_rotate_ariphmetic_shift[0] ; 24.520 ; 24.520 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[0]                             ; logick_rotate_ariphmetic_shift[0] ; 24.257 ; 24.257 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[1]                             ; logick_rotate_ariphmetic_shift[0] ; 24.231 ; 24.231 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[2]                             ; logick_rotate_ariphmetic_shift[0] ; 24.269 ; 24.269 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[3]                             ; logick_rotate_ariphmetic_shift[0] ; 24.119 ; 24.119 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[4]                             ; logick_rotate_ariphmetic_shift[0] ; 24.093 ; 24.093 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[5]                             ; logick_rotate_ariphmetic_shift[0] ; 24.144 ; 24.144 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[6]                             ; logick_rotate_ariphmetic_shift[0] ; 24.016 ; 24.016 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[7]                             ; logick_rotate_ariphmetic_shift[0] ; 24.040 ; 24.040 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[8]                             ; logick_rotate_ariphmetic_shift[0] ; 24.228 ; 24.228 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[9]                             ; logick_rotate_ariphmetic_shift[0] ; 23.806 ; 23.806 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[10]                            ; logick_rotate_ariphmetic_shift[0] ; 23.975 ; 23.975 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[11]                            ; logick_rotate_ariphmetic_shift[0] ; 24.204 ; 24.204 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[12]                            ; logick_rotate_ariphmetic_shift[0] ; 24.061 ; 24.061 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[13]                            ; logick_rotate_ariphmetic_shift[0] ; 24.163 ; 24.163 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[14]                            ; logick_rotate_ariphmetic_shift[0] ; 24.150 ; 24.150 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[15]                            ; logick_rotate_ariphmetic_shift[0] ; 24.068 ; 24.068 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[16]                            ; logick_rotate_ariphmetic_shift[0] ; 24.014 ; 24.014 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[17]                            ; logick_rotate_ariphmetic_shift[0] ; 23.971 ; 23.971 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[18]                            ; logick_rotate_ariphmetic_shift[0] ; 24.187 ; 24.187 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[19]                            ; logick_rotate_ariphmetic_shift[0] ; 24.309 ; 24.309 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[20]                            ; logick_rotate_ariphmetic_shift[0] ; 24.309 ; 24.309 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[21]                            ; logick_rotate_ariphmetic_shift[0] ; 24.388 ; 24.388 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[22]                            ; logick_rotate_ariphmetic_shift[0] ; 24.107 ; 24.107 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[23]                            ; logick_rotate_ariphmetic_shift[0] ; 24.285 ; 24.285 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[24]                            ; logick_rotate_ariphmetic_shift[0] ; 24.030 ; 24.030 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[25]                            ; logick_rotate_ariphmetic_shift[0] ; 24.124 ; 24.124 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[26]                            ; logick_rotate_ariphmetic_shift[0] ; 23.843 ; 23.843 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[27]                            ; logick_rotate_ariphmetic_shift[0] ; 24.177 ; 24.177 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[28]                            ; logick_rotate_ariphmetic_shift[0] ; 24.520 ; 24.520 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[29]                            ; logick_rotate_ariphmetic_shift[0] ; 24.515 ; 24.515 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[30]                            ; logick_rotate_ariphmetic_shift[0] ; 24.328 ; 24.328 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[31]                            ; logick_rotate_ariphmetic_shift[0] ; 24.153 ; 24.153 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; left_of_right                      ; logick_rotate_ariphmetic_shift[0] ; 25.195 ; 25.195 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; logick_rotate_ariphmetic_shift[*]  ; logick_rotate_ariphmetic_shift[0] ; 4.198  ; 4.198  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.618  ; 0.618  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[1] ; logick_rotate_ariphmetic_shift[0] ; 4.198  ; 4.198  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; sl[*]                              ; logick_rotate_ariphmetic_shift[0] ; 25.658 ; 25.658 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[0]                             ; logick_rotate_ariphmetic_shift[0] ; 24.932 ; 24.932 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[1]                             ; logick_rotate_ariphmetic_shift[0] ; 25.254 ; 25.254 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[2]                             ; logick_rotate_ariphmetic_shift[0] ; 25.426 ; 25.426 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[3]                             ; logick_rotate_ariphmetic_shift[0] ; 25.658 ; 25.658 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[4]                             ; logick_rotate_ariphmetic_shift[0] ; 25.539 ; 25.539 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                                                                ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; Data Port                          ; Clock Port                        ; Rise   ; Fall   ; Clock Edge ; Clock Reference                   ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; in[*]                              ; logick_rotate_ariphmetic_shift[0] ; -1.992 ; -1.992 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[0]                             ; logick_rotate_ariphmetic_shift[0] ; -2.496 ; -2.496 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[1]                             ; logick_rotate_ariphmetic_shift[0] ; -2.701 ; -2.701 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[2]                             ; logick_rotate_ariphmetic_shift[0] ; -2.734 ; -2.734 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[3]                             ; logick_rotate_ariphmetic_shift[0] ; -2.609 ; -2.609 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[4]                             ; logick_rotate_ariphmetic_shift[0] ; -2.584 ; -2.584 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[5]                             ; logick_rotate_ariphmetic_shift[0] ; -2.994 ; -2.994 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[6]                             ; logick_rotate_ariphmetic_shift[0] ; -2.901 ; -2.901 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[7]                             ; logick_rotate_ariphmetic_shift[0] ; -2.826 ; -2.826 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[8]                             ; logick_rotate_ariphmetic_shift[0] ; -3.035 ; -3.035 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[9]                             ; logick_rotate_ariphmetic_shift[0] ; -2.442 ; -2.442 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[10]                            ; logick_rotate_ariphmetic_shift[0] ; -2.636 ; -2.636 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[11]                            ; logick_rotate_ariphmetic_shift[0] ; -2.828 ; -2.828 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[12]                            ; logick_rotate_ariphmetic_shift[0] ; -2.560 ; -2.560 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[13]                            ; logick_rotate_ariphmetic_shift[0] ; -2.855 ; -2.855 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[14]                            ; logick_rotate_ariphmetic_shift[0] ; -3.061 ; -3.061 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[15]                            ; logick_rotate_ariphmetic_shift[0] ; -3.071 ; -3.071 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[16]                            ; logick_rotate_ariphmetic_shift[0] ; -2.846 ; -2.846 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[17]                            ; logick_rotate_ariphmetic_shift[0] ; -2.931 ; -2.931 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[18]                            ; logick_rotate_ariphmetic_shift[0] ; -2.851 ; -2.851 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[19]                            ; logick_rotate_ariphmetic_shift[0] ; -2.927 ; -2.927 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[20]                            ; logick_rotate_ariphmetic_shift[0] ; -2.629 ; -2.629 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[21]                            ; logick_rotate_ariphmetic_shift[0] ; -2.739 ; -2.739 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[22]                            ; logick_rotate_ariphmetic_shift[0] ; -2.480 ; -2.480 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[23]                            ; logick_rotate_ariphmetic_shift[0] ; -2.431 ; -2.431 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[24]                            ; logick_rotate_ariphmetic_shift[0] ; -2.346 ; -2.346 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[25]                            ; logick_rotate_ariphmetic_shift[0] ; -2.096 ; -2.096 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[26]                            ; logick_rotate_ariphmetic_shift[0] ; -1.992 ; -1.992 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[27]                            ; logick_rotate_ariphmetic_shift[0] ; -2.160 ; -2.160 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[28]                            ; logick_rotate_ariphmetic_shift[0] ; -2.569 ; -2.569 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[29]                            ; logick_rotate_ariphmetic_shift[0] ; -2.354 ; -2.354 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[30]                            ; logick_rotate_ariphmetic_shift[0] ; -2.131 ; -2.131 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[31]                            ; logick_rotate_ariphmetic_shift[0] ; -2.589 ; -2.589 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; left_of_right                      ; logick_rotate_ariphmetic_shift[0] ; -2.166 ; -2.166 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; logick_rotate_ariphmetic_shift[*]  ; logick_rotate_ariphmetic_shift[0] ; 0.079  ; 0.079  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.079  ; 0.079  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[1] ; logick_rotate_ariphmetic_shift[0] ; -1.521 ; -1.521 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; sl[*]                              ; logick_rotate_ariphmetic_shift[0] ; -1.661 ; -1.661 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[0]                             ; logick_rotate_ariphmetic_shift[0] ; -2.321 ; -2.321 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[1]                             ; logick_rotate_ariphmetic_shift[0] ; -1.898 ; -1.898 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[2]                             ; logick_rotate_ariphmetic_shift[0] ; -2.184 ; -2.184 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[3]                             ; logick_rotate_ariphmetic_shift[0] ; -2.410 ; -2.410 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[4]                             ; logick_rotate_ariphmetic_shift[0] ; -1.661 ; -1.661 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                          ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; Data Port ; Clock Port                        ; Rise  ; Fall  ; Clock Edge ; Clock Reference                   ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; out[*]    ; logick_rotate_ariphmetic_shift[0] ; 4.756 ; 4.756 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[0]   ; logick_rotate_ariphmetic_shift[0] ; 4.346 ; 4.346 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[1]   ; logick_rotate_ariphmetic_shift[0] ; 4.357 ; 4.357 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[2]   ; logick_rotate_ariphmetic_shift[0] ; 4.366 ; 4.366 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[3]   ; logick_rotate_ariphmetic_shift[0] ; 4.494 ; 4.494 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[4]   ; logick_rotate_ariphmetic_shift[0] ; 4.756 ; 4.756 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[5]   ; logick_rotate_ariphmetic_shift[0] ; 4.353 ; 4.353 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[6]   ; logick_rotate_ariphmetic_shift[0] ; 4.189 ; 4.189 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[7]   ; logick_rotate_ariphmetic_shift[0] ; 4.651 ; 4.651 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[8]   ; logick_rotate_ariphmetic_shift[0] ; 4.468 ; 4.468 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[9]   ; logick_rotate_ariphmetic_shift[0] ; 4.521 ; 4.521 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[10]  ; logick_rotate_ariphmetic_shift[0] ; 4.328 ; 4.328 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[11]  ; logick_rotate_ariphmetic_shift[0] ; 4.475 ; 4.475 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[12]  ; logick_rotate_ariphmetic_shift[0] ; 4.704 ; 4.704 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[13]  ; logick_rotate_ariphmetic_shift[0] ; 4.482 ; 4.482 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[14]  ; logick_rotate_ariphmetic_shift[0] ; 4.558 ; 4.558 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[15]  ; logick_rotate_ariphmetic_shift[0] ; 4.432 ; 4.432 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[16]  ; logick_rotate_ariphmetic_shift[0] ; 4.281 ; 4.281 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[17]  ; logick_rotate_ariphmetic_shift[0] ; 4.399 ; 4.399 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[18]  ; logick_rotate_ariphmetic_shift[0] ; 4.576 ; 4.576 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[19]  ; logick_rotate_ariphmetic_shift[0] ; 4.471 ; 4.471 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[20]  ; logick_rotate_ariphmetic_shift[0] ; 4.525 ; 4.525 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[21]  ; logick_rotate_ariphmetic_shift[0] ; 4.583 ; 4.583 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[22]  ; logick_rotate_ariphmetic_shift[0] ; 4.566 ; 4.566 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[23]  ; logick_rotate_ariphmetic_shift[0] ; 4.680 ; 4.680 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[24]  ; logick_rotate_ariphmetic_shift[0] ; 4.138 ; 4.138 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[25]  ; logick_rotate_ariphmetic_shift[0] ; 4.130 ; 4.130 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[26]  ; logick_rotate_ariphmetic_shift[0] ; 4.201 ; 4.201 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[27]  ; logick_rotate_ariphmetic_shift[0] ; 4.331 ; 4.331 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[28]  ; logick_rotate_ariphmetic_shift[0] ; 4.686 ; 4.686 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[29]  ; logick_rotate_ariphmetic_shift[0] ; 4.548 ; 4.548 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[30]  ; logick_rotate_ariphmetic_shift[0] ; 4.530 ; 4.530 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[31]  ; logick_rotate_ariphmetic_shift[0] ; 4.422 ; 4.422 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                  ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; Data Port ; Clock Port                        ; Rise  ; Fall  ; Clock Edge ; Clock Reference                   ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; out[*]    ; logick_rotate_ariphmetic_shift[0] ; 4.130 ; 4.130 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[0]   ; logick_rotate_ariphmetic_shift[0] ; 4.346 ; 4.346 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[1]   ; logick_rotate_ariphmetic_shift[0] ; 4.357 ; 4.357 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[2]   ; logick_rotate_ariphmetic_shift[0] ; 4.366 ; 4.366 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[3]   ; logick_rotate_ariphmetic_shift[0] ; 4.494 ; 4.494 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[4]   ; logick_rotate_ariphmetic_shift[0] ; 4.756 ; 4.756 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[5]   ; logick_rotate_ariphmetic_shift[0] ; 4.353 ; 4.353 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[6]   ; logick_rotate_ariphmetic_shift[0] ; 4.189 ; 4.189 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[7]   ; logick_rotate_ariphmetic_shift[0] ; 4.651 ; 4.651 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[8]   ; logick_rotate_ariphmetic_shift[0] ; 4.468 ; 4.468 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[9]   ; logick_rotate_ariphmetic_shift[0] ; 4.521 ; 4.521 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[10]  ; logick_rotate_ariphmetic_shift[0] ; 4.328 ; 4.328 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[11]  ; logick_rotate_ariphmetic_shift[0] ; 4.475 ; 4.475 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[12]  ; logick_rotate_ariphmetic_shift[0] ; 4.704 ; 4.704 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[13]  ; logick_rotate_ariphmetic_shift[0] ; 4.482 ; 4.482 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[14]  ; logick_rotate_ariphmetic_shift[0] ; 4.558 ; 4.558 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[15]  ; logick_rotate_ariphmetic_shift[0] ; 4.432 ; 4.432 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[16]  ; logick_rotate_ariphmetic_shift[0] ; 4.281 ; 4.281 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[17]  ; logick_rotate_ariphmetic_shift[0] ; 4.399 ; 4.399 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[18]  ; logick_rotate_ariphmetic_shift[0] ; 4.576 ; 4.576 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[19]  ; logick_rotate_ariphmetic_shift[0] ; 4.471 ; 4.471 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[20]  ; logick_rotate_ariphmetic_shift[0] ; 4.525 ; 4.525 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[21]  ; logick_rotate_ariphmetic_shift[0] ; 4.583 ; 4.583 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[22]  ; logick_rotate_ariphmetic_shift[0] ; 4.566 ; 4.566 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[23]  ; logick_rotate_ariphmetic_shift[0] ; 4.680 ; 4.680 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[24]  ; logick_rotate_ariphmetic_shift[0] ; 4.138 ; 4.138 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[25]  ; logick_rotate_ariphmetic_shift[0] ; 4.130 ; 4.130 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[26]  ; logick_rotate_ariphmetic_shift[0] ; 4.201 ; 4.201 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[27]  ; logick_rotate_ariphmetic_shift[0] ; 4.331 ; 4.331 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[28]  ; logick_rotate_ariphmetic_shift[0] ; 4.686 ; 4.686 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[29]  ; logick_rotate_ariphmetic_shift[0] ; 4.548 ; 4.548 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[30]  ; logick_rotate_ariphmetic_shift[0] ; 4.530 ; 4.530 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[31]  ; logick_rotate_ariphmetic_shift[0] ; 4.422 ; 4.422 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                              ;
++------------------------------------+---------+--------+----------+---------+---------------------+
+; Clock                              ; Setup   ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------------------------+---------+--------+----------+---------+---------------------+
+; Worst-case Slack                   ; -1.701  ; -0.079 ; N/A      ; N/A     ; -1.222              ;
+;  logick_rotate_ariphmetic_shift[0] ; -1.701  ; -0.079 ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS                    ; -45.189 ; -0.678 ; 0.0      ; 0.0     ; -1.222              ;
+;  logick_rotate_ariphmetic_shift[0] ; -45.189 ; -0.678 ; N/A      ; N/A     ; -1.222              ;
++------------------------------------+---------+--------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                                                               ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; Data Port                          ; Clock Port                        ; Rise   ; Fall   ; Clock Edge ; Clock Reference                   ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; in[*]                              ; logick_rotate_ariphmetic_shift[0] ; 55.652 ; 55.652 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[0]                             ; logick_rotate_ariphmetic_shift[0] ; 55.150 ; 55.150 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[1]                             ; logick_rotate_ariphmetic_shift[0] ; 55.032 ; 55.032 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[2]                             ; logick_rotate_ariphmetic_shift[0] ; 55.068 ; 55.068 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[3]                             ; logick_rotate_ariphmetic_shift[0] ; 54.860 ; 54.860 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[4]                             ; logick_rotate_ariphmetic_shift[0] ; 54.811 ; 54.811 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[5]                             ; logick_rotate_ariphmetic_shift[0] ; 54.787 ; 54.787 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[6]                             ; logick_rotate_ariphmetic_shift[0] ; 54.616 ; 54.616 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[7]                             ; logick_rotate_ariphmetic_shift[0] ; 54.453 ; 54.453 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[8]                             ; logick_rotate_ariphmetic_shift[0] ; 54.828 ; 54.828 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[9]                             ; logick_rotate_ariphmetic_shift[0] ; 53.997 ; 53.997 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[10]                            ; logick_rotate_ariphmetic_shift[0] ; 54.310 ; 54.310 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[11]                            ; logick_rotate_ariphmetic_shift[0] ; 54.774 ; 54.774 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[12]                            ; logick_rotate_ariphmetic_shift[0] ; 54.520 ; 54.520 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[13]                            ; logick_rotate_ariphmetic_shift[0] ; 54.803 ; 54.803 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[14]                            ; logick_rotate_ariphmetic_shift[0] ; 54.721 ; 54.721 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[15]                            ; logick_rotate_ariphmetic_shift[0] ; 54.506 ; 54.506 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[16]                            ; logick_rotate_ariphmetic_shift[0] ; 54.437 ; 54.437 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[17]                            ; logick_rotate_ariphmetic_shift[0] ; 54.296 ; 54.296 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[18]                            ; logick_rotate_ariphmetic_shift[0] ; 54.908 ; 54.908 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[19]                            ; logick_rotate_ariphmetic_shift[0] ; 55.101 ; 55.101 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[20]                            ; logick_rotate_ariphmetic_shift[0] ; 55.189 ; 55.189 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[21]                            ; logick_rotate_ariphmetic_shift[0] ; 55.206 ; 55.206 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[22]                            ; logick_rotate_ariphmetic_shift[0] ; 54.844 ; 54.844 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[23]                            ; logick_rotate_ariphmetic_shift[0] ; 55.219 ; 55.219 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[24]                            ; logick_rotate_ariphmetic_shift[0] ; 54.635 ; 54.635 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[25]                            ; logick_rotate_ariphmetic_shift[0] ; 54.796 ; 54.796 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[26]                            ; logick_rotate_ariphmetic_shift[0] ; 54.206 ; 54.206 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[27]                            ; logick_rotate_ariphmetic_shift[0] ; 54.883 ; 54.883 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[28]                            ; logick_rotate_ariphmetic_shift[0] ; 55.650 ; 55.650 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[29]                            ; logick_rotate_ariphmetic_shift[0] ; 55.652 ; 55.652 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[30]                            ; logick_rotate_ariphmetic_shift[0] ; 55.279 ; 55.279 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[31]                            ; logick_rotate_ariphmetic_shift[0] ; 54.831 ; 54.831 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; left_of_right                      ; logick_rotate_ariphmetic_shift[0] ; 56.998 ; 56.998 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; logick_rotate_ariphmetic_shift[*]  ; logick_rotate_ariphmetic_shift[0] ; 8.695  ; 8.695  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 2.201  ; 2.201  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[1] ; logick_rotate_ariphmetic_shift[0] ; 8.695  ; 8.695  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; sl[*]                              ; logick_rotate_ariphmetic_shift[0] ; 57.902 ; 57.902 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[0]                             ; logick_rotate_ariphmetic_shift[0] ; 56.446 ; 56.446 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[1]                             ; logick_rotate_ariphmetic_shift[0] ; 57.017 ; 57.017 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[2]                             ; logick_rotate_ariphmetic_shift[0] ; 57.390 ; 57.390 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[3]                             ; logick_rotate_ariphmetic_shift[0] ; 57.902 ; 57.902 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[4]                             ; logick_rotate_ariphmetic_shift[0] ; 57.666 ; 57.666 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                                                                ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; Data Port                          ; Clock Port                        ; Rise   ; Fall   ; Clock Edge ; Clock Reference                   ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+; in[*]                              ; logick_rotate_ariphmetic_shift[0] ; -1.992 ; -1.992 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[0]                             ; logick_rotate_ariphmetic_shift[0] ; -2.496 ; -2.496 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[1]                             ; logick_rotate_ariphmetic_shift[0] ; -2.701 ; -2.701 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[2]                             ; logick_rotate_ariphmetic_shift[0] ; -2.734 ; -2.734 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[3]                             ; logick_rotate_ariphmetic_shift[0] ; -2.609 ; -2.609 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[4]                             ; logick_rotate_ariphmetic_shift[0] ; -2.584 ; -2.584 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[5]                             ; logick_rotate_ariphmetic_shift[0] ; -2.994 ; -2.994 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[6]                             ; logick_rotate_ariphmetic_shift[0] ; -2.901 ; -2.901 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[7]                             ; logick_rotate_ariphmetic_shift[0] ; -2.826 ; -2.826 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[8]                             ; logick_rotate_ariphmetic_shift[0] ; -3.035 ; -3.035 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[9]                             ; logick_rotate_ariphmetic_shift[0] ; -2.442 ; -2.442 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[10]                            ; logick_rotate_ariphmetic_shift[0] ; -2.636 ; -2.636 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[11]                            ; logick_rotate_ariphmetic_shift[0] ; -2.828 ; -2.828 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[12]                            ; logick_rotate_ariphmetic_shift[0] ; -2.560 ; -2.560 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[13]                            ; logick_rotate_ariphmetic_shift[0] ; -2.855 ; -2.855 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[14]                            ; logick_rotate_ariphmetic_shift[0] ; -3.061 ; -3.061 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[15]                            ; logick_rotate_ariphmetic_shift[0] ; -3.071 ; -3.071 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[16]                            ; logick_rotate_ariphmetic_shift[0] ; -2.846 ; -2.846 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[17]                            ; logick_rotate_ariphmetic_shift[0] ; -2.931 ; -2.931 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[18]                            ; logick_rotate_ariphmetic_shift[0] ; -2.851 ; -2.851 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[19]                            ; logick_rotate_ariphmetic_shift[0] ; -2.927 ; -2.927 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[20]                            ; logick_rotate_ariphmetic_shift[0] ; -2.629 ; -2.629 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[21]                            ; logick_rotate_ariphmetic_shift[0] ; -2.739 ; -2.739 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[22]                            ; logick_rotate_ariphmetic_shift[0] ; -2.480 ; -2.480 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[23]                            ; logick_rotate_ariphmetic_shift[0] ; -2.431 ; -2.431 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[24]                            ; logick_rotate_ariphmetic_shift[0] ; -2.346 ; -2.346 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[25]                            ; logick_rotate_ariphmetic_shift[0] ; -2.096 ; -2.096 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[26]                            ; logick_rotate_ariphmetic_shift[0] ; -1.992 ; -1.992 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[27]                            ; logick_rotate_ariphmetic_shift[0] ; -2.160 ; -2.160 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[28]                            ; logick_rotate_ariphmetic_shift[0] ; -2.569 ; -2.569 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[29]                            ; logick_rotate_ariphmetic_shift[0] ; -2.354 ; -2.354 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[30]                            ; logick_rotate_ariphmetic_shift[0] ; -2.131 ; -2.131 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  in[31]                            ; logick_rotate_ariphmetic_shift[0] ; -2.589 ; -2.589 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; left_of_right                      ; logick_rotate_ariphmetic_shift[0] ; -2.166 ; -2.166 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; logick_rotate_ariphmetic_shift[*]  ; logick_rotate_ariphmetic_shift[0] ; 0.079  ; 0.079  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 0.079  ; 0.079  ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  logick_rotate_ariphmetic_shift[1] ; logick_rotate_ariphmetic_shift[0] ; -1.521 ; -1.521 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+; sl[*]                              ; logick_rotate_ariphmetic_shift[0] ; -1.661 ; -1.661 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[0]                             ; logick_rotate_ariphmetic_shift[0] ; -2.321 ; -2.321 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[1]                             ; logick_rotate_ariphmetic_shift[0] ; -1.898 ; -1.898 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[2]                             ; logick_rotate_ariphmetic_shift[0] ; -2.184 ; -2.184 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[3]                             ; logick_rotate_ariphmetic_shift[0] ; -2.410 ; -2.410 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  sl[4]                             ; logick_rotate_ariphmetic_shift[0] ; -1.661 ; -1.661 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++------------------------------------+-----------------------------------+--------+--------+------------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                                          ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; Data Port ; Clock Port                        ; Rise  ; Fall  ; Clock Edge ; Clock Reference                   ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; out[*]    ; logick_rotate_ariphmetic_shift[0] ; 9.001 ; 9.001 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[0]   ; logick_rotate_ariphmetic_shift[0] ; 8.069 ; 8.069 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[1]   ; logick_rotate_ariphmetic_shift[0] ; 8.068 ; 8.068 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[2]   ; logick_rotate_ariphmetic_shift[0] ; 8.154 ; 8.154 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[3]   ; logick_rotate_ariphmetic_shift[0] ; 8.418 ; 8.418 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[4]   ; logick_rotate_ariphmetic_shift[0] ; 9.001 ; 9.001 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[5]   ; logick_rotate_ariphmetic_shift[0] ; 8.096 ; 8.096 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[6]   ; logick_rotate_ariphmetic_shift[0] ; 7.686 ; 7.686 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[7]   ; logick_rotate_ariphmetic_shift[0] ; 8.690 ; 8.690 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[8]   ; logick_rotate_ariphmetic_shift[0] ; 8.293 ; 8.293 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[9]   ; logick_rotate_ariphmetic_shift[0] ; 8.490 ; 8.490 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[10]  ; logick_rotate_ariphmetic_shift[0] ; 8.053 ; 8.053 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[11]  ; logick_rotate_ariphmetic_shift[0] ; 8.356 ; 8.356 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[12]  ; logick_rotate_ariphmetic_shift[0] ; 8.826 ; 8.826 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[13]  ; logick_rotate_ariphmetic_shift[0] ; 8.407 ; 8.407 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[14]  ; logick_rotate_ariphmetic_shift[0] ; 8.498 ; 8.498 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[15]  ; logick_rotate_ariphmetic_shift[0] ; 8.274 ; 8.274 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[16]  ; logick_rotate_ariphmetic_shift[0] ; 7.903 ; 7.903 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[17]  ; logick_rotate_ariphmetic_shift[0] ; 8.201 ; 8.201 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[18]  ; logick_rotate_ariphmetic_shift[0] ; 8.634 ; 8.634 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[19]  ; logick_rotate_ariphmetic_shift[0] ; 8.394 ; 8.394 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[20]  ; logick_rotate_ariphmetic_shift[0] ; 8.518 ; 8.518 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[21]  ; logick_rotate_ariphmetic_shift[0] ; 8.627 ; 8.627 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[22]  ; logick_rotate_ariphmetic_shift[0] ; 8.532 ; 8.532 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[23]  ; logick_rotate_ariphmetic_shift[0] ; 8.848 ; 8.848 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[24]  ; logick_rotate_ariphmetic_shift[0] ; 7.674 ; 7.674 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[25]  ; logick_rotate_ariphmetic_shift[0] ; 7.668 ; 7.668 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[26]  ; logick_rotate_ariphmetic_shift[0] ; 7.738 ; 7.738 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[27]  ; logick_rotate_ariphmetic_shift[0] ; 8.039 ; 8.039 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[28]  ; logick_rotate_ariphmetic_shift[0] ; 8.749 ; 8.749 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[29]  ; logick_rotate_ariphmetic_shift[0] ; 8.527 ; 8.527 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[30]  ; logick_rotate_ariphmetic_shift[0] ; 8.505 ; 8.505 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[31]  ; logick_rotate_ariphmetic_shift[0] ; 8.270 ; 8.270 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                                  ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; Data Port ; Clock Port                        ; Rise  ; Fall  ; Clock Edge ; Clock Reference                   ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+; out[*]    ; logick_rotate_ariphmetic_shift[0] ; 4.130 ; 4.130 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[0]   ; logick_rotate_ariphmetic_shift[0] ; 4.346 ; 4.346 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[1]   ; logick_rotate_ariphmetic_shift[0] ; 4.357 ; 4.357 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[2]   ; logick_rotate_ariphmetic_shift[0] ; 4.366 ; 4.366 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[3]   ; logick_rotate_ariphmetic_shift[0] ; 4.494 ; 4.494 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[4]   ; logick_rotate_ariphmetic_shift[0] ; 4.756 ; 4.756 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[5]   ; logick_rotate_ariphmetic_shift[0] ; 4.353 ; 4.353 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[6]   ; logick_rotate_ariphmetic_shift[0] ; 4.189 ; 4.189 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[7]   ; logick_rotate_ariphmetic_shift[0] ; 4.651 ; 4.651 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[8]   ; logick_rotate_ariphmetic_shift[0] ; 4.468 ; 4.468 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[9]   ; logick_rotate_ariphmetic_shift[0] ; 4.521 ; 4.521 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[10]  ; logick_rotate_ariphmetic_shift[0] ; 4.328 ; 4.328 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[11]  ; logick_rotate_ariphmetic_shift[0] ; 4.475 ; 4.475 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[12]  ; logick_rotate_ariphmetic_shift[0] ; 4.704 ; 4.704 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[13]  ; logick_rotate_ariphmetic_shift[0] ; 4.482 ; 4.482 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[14]  ; logick_rotate_ariphmetic_shift[0] ; 4.558 ; 4.558 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[15]  ; logick_rotate_ariphmetic_shift[0] ; 4.432 ; 4.432 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[16]  ; logick_rotate_ariphmetic_shift[0] ; 4.281 ; 4.281 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[17]  ; logick_rotate_ariphmetic_shift[0] ; 4.399 ; 4.399 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[18]  ; logick_rotate_ariphmetic_shift[0] ; 4.576 ; 4.576 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[19]  ; logick_rotate_ariphmetic_shift[0] ; 4.471 ; 4.471 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[20]  ; logick_rotate_ariphmetic_shift[0] ; 4.525 ; 4.525 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[21]  ; logick_rotate_ariphmetic_shift[0] ; 4.583 ; 4.583 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[22]  ; logick_rotate_ariphmetic_shift[0] ; 4.566 ; 4.566 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[23]  ; logick_rotate_ariphmetic_shift[0] ; 4.680 ; 4.680 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[24]  ; logick_rotate_ariphmetic_shift[0] ; 4.138 ; 4.138 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[25]  ; logick_rotate_ariphmetic_shift[0] ; 4.130 ; 4.130 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[26]  ; logick_rotate_ariphmetic_shift[0] ; 4.201 ; 4.201 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[27]  ; logick_rotate_ariphmetic_shift[0] ; 4.331 ; 4.331 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[28]  ; logick_rotate_ariphmetic_shift[0] ; 4.686 ; 4.686 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[29]  ; logick_rotate_ariphmetic_shift[0] ; 4.548 ; 4.548 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[30]  ; logick_rotate_ariphmetic_shift[0] ; 4.530 ; 4.530 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
+;  out[31]  ; logick_rotate_ariphmetic_shift[0] ; 4.422 ; 4.422 ; Rise       ; logick_rotate_ariphmetic_shift[0] ;
++-----------+-----------------------------------+-------+-------+------------+-----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                   ;
++-----------------------------------+-----------------------------------+----------+----------+----------+----------+
+; From Clock                        ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------+-----------------------------------+----------+----------+----------+----------+
+; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 235      ; 235      ; 0        ; 0        ;
++-----------------------------------+-----------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                    ;
++-----------------------------------+-----------------------------------+----------+----------+----------+----------+
+; From Clock                        ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------------+-----------------------------------+----------+----------+----------+----------+
+; logick_rotate_ariphmetic_shift[0] ; logick_rotate_ariphmetic_shift[0] ; 235      ; 235      ; 0        ; 0        ;
++-----------------------------------+-----------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 39    ; 39   ;
+; Unconstrained Input Port Paths  ; 1248  ; 1248 ;
+; Unconstrained Output Ports      ; 32    ; 32   ;
+; Unconstrained Output Port Paths ; 32    ; 32   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Oct 19 00:34:07 2018
+Info: Command: quartus_sta barrel_shifter -c barrel_shifter
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 32 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'barrel_shifter.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name logick_rotate_ariphmetic_shift[0] logick_rotate_ariphmetic_shift[0]
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.701
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.701       -45.189 logick_rotate_ariphmetic_shift[0] 
+Info (332146): Worst-case hold slack is 0.529
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.529         0.000 logick_rotate_ariphmetic_shift[0] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 logick_rotate_ariphmetic_shift[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.118
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.118        -0.616 logick_rotate_ariphmetic_shift[0] 
+Info (332146): Worst-case hold slack is -0.079
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.079        -0.678 logick_rotate_ariphmetic_shift[0] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 logick_rotate_ariphmetic_shift[0] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 519 megabytes
+    Info: Processing ended: Fri Oct 19 00:34:08 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

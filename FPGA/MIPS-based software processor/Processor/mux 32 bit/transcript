@@ -1,0 +1,28 @@
+# //  ModelSim SE-64 10.2c Jul 18 2013 Linux 4.18.6-arch1-1-ARCH
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do sim.do 
+# Model Technology ModelSim SE-64 vlog 10.2c Compiler 2013.07 Jul 18 2013
+# -- Compiling module mux_32_bit
+# -- Compiling module mux_32_bit_tb
+# 
+# Top level modules:
+# 	mux_32_bit_tb
+# vsim -novopt work.mux_32_bit_tb 
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/8 mips 1 tact/mux 32 bit/work.mux_32_bit_tb
+# Loading work.mux_32_bit_tb
+# Refreshing /home/max/Work dir/_University/_3 kurs/Assembler/HW/8 mips 1 tact/mux 32 bit/work.mux_32_bit
+# Loading work.mux_32_bit
+# ** Note: $finish    : mux_32_bit_tb.v(37)
+#    Time: 100 ns  Iteration: 0  Instance: /mux_32_bit_tb
+# 1
+# Break in Module mux_32_bit_tb at mux_32_bit_tb.v line 37
+# Simulation Breakpoint: 1
+# Break in Module mux_32_bit_tb at mux_32_bit_tb.v line 37
+# MACRO ./sim.do PAUSED at line 19
